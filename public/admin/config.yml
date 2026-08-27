@@ -1,9 +1,11 @@
 # Decap CMS config for jkdm.de
 backend:
   name: github
-  repo: OWNER/REPO   # TODO: replace with the real GitHub "owner/repo" once this is pushed
+  repo: LUZMUNDI/jkdm-site
   branch: main
-
+  base_url: https://twilight-smoke-c210.lucianouniversity2024.workers.dev
+  auth_endpoint: auth
+  
 site_url: https://jeet-kune-do-muenchen.de
 display_url: https://jeet-kune-do-muenchen.de
 
