@@ -1,0 +1,12 @@
+{
+  "order": 6,
+  "name": "Ana",
+  "initial": "A",
+  "image": null,
+  "isReal": false,
+  "disc": "Jeet Kune Do",
+  "since": "seit 2020",
+  "style": "Timing",
+  "quote": "Sifu korrigiert dich zweimal. Beim dritten Mal grinst er nur — und du weißt genau, was gemeint ist.",
+  "stats": [{"value":"2020","label":"Dabei seit"},{"value":"截拳道","label":"Jeet Kune Do"}]
+}

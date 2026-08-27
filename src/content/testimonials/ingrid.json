@@ -1,0 +1,12 @@
+{
+  "order": 10,
+  "name": "Ingrid",
+  "initial": "I",
+  "image": null,
+  "isReal": false,
+  "disc": "Chen Tai Chi",
+  "since": "seit 2017",
+  "style": "Wurzel",
+  "quote": "Tai Chi war der Teil, über den ich vorher gelacht habe. Jetzt ist es der Teil, den ich nicht ausfallen lassen will.",
+  "stats": [{"value":"2017","label":"Dabei seit"},{"value":"太極","label":"Chen Tai Chi"}]
+}

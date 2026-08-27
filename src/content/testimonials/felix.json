@@ -1,0 +1,12 @@
+{
+  "order": 9,
+  "name": "Felix",
+  "initial": "F",
+  "image": null,
+  "isReal": false,
+  "disc": "Wing Chun",
+  "since": "seit 2024",
+  "style": "Struktur",
+  "quote": "Keine Show, keine Pokale an der Wand. Nur Technik, die funktioniert — und Leute, die wollen, dass du sie kannst.",
+  "stats": [{"value":"2024","label":"Dabei seit"},{"value":"詠春","label":"Wing Chun"}]
+}

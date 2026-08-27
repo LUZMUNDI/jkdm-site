@@ -1,0 +1,39 @@
+{
+  "heroEyebrow": "„Dies ist nicht für jeden.“",
+  "heroHeadline": "Du kommst als Gast. Du gehst als Schüler.",
+  "heroSubhead": "Fünf Stile, ein Studio in München: Jeet Kune Do, Wing Chun, Pencak Silat, Selbstverteidigung und Chen Tai Chi. Eine Linie, seit 1992 weitergegeben — ab Mittwoch auch an dich.",
+  "heroPrimaryButton": "Probetraining sichern — 20 €",
+  "heroSecondaryButton": "Mittwoch 19:00 · Sonntag 18:00",
+  "heroStats": [
+    {"value": "1992", "label": "Auf der Matte"},
+    {"value": "5", "label": "Stile"},
+    {"value": "ab 45 €", "label": "Pro Monat"}
+  ],
+  "minuteLabel": "Das Studio in einer Minute",
+  "minuteTitle": "Kein Schnickschnack. Nur Wirkung.",
+  "minuteBody": "Wir studieren in kleinen Gruppen — nicht, weil wir exklusiv klingen wollen, sondern weil dich sonst niemand sieht. Wir hören zusammen Musik, wir lachen, wir gehen zusammen an die Grenze. Und wir lernen zusammen. Das ist das Wichtigste.",
+  "minuteQuotes": [
+    "Hier wirst du gesehen. Korrigiert. Gefordert.",
+    "Das ist eine Gemeinschaft mit Menschen, die auf demselben Weg sind wie du.",
+    "Wenn du etwas Bequemes suchst, bist du hier falsch."
+  ],
+  "minuteClosing": "Dann sehen wir uns im Studio.",
+  "whyLabel": "Warum hier",
+  "whyTitle": "Kleine Gruppe. Grosse Linie. Dein Platz ist frei.",
+  "whyLead": "Hier bist du nach zehn Minuten kein Gast mehr, sondern Teil der Reihe. Du studierst mit Leuten, die deinen Namen kennen, dich hochziehen — und merken, wenn du dich drückst.",
+  "whyReasons": [
+    {"title": "Keine Warteschlange", "body": "Kein Spiegel, keine Warteschlange: dein Lehrer sieht dir zu, und die Gruppe sieht mit."},
+    {"title": "Fünf Stile, ein System", "body": "Jeet Kune Do, Wing Chun, Pencak Silat, Selbstverteidigung und Chen Tai Chi greifen ineinander. Du lernst nicht eine Form — du lernst das System, das alle hier teilen."},
+    {"title": "Anfang bei null ist erlaubt", "body": "Jeder hier war mal der Neue. Einer unserer Trainer kam 2021 als Schüler durch dieselbe Tür — und steht heute vorne."}
+  ],
+  "disciplinesLabel": "Was du studierst",
+  "disciplinesTitle": "Fünf Stile. Eine Linie. Ein Studio.",
+  "disciplines": [
+    {"name": "Jeet Kune Do", "cjk": "截拳道"},
+    {"name": "Wing Chun", "cjk": "詠春"},
+    {"name": "Pencak Silat", "cjk": ""},
+    {"name": "Selbstverteidigung", "cjk": "護身"},
+    {"name": "Chen Tai Chi", "cjk": "太極"}
+  ],
+  "locationLine": "Redlingerstr. 7, 81735 München · U5 Michaelibad. Vor Ort ist alles ausgeschildert — du findest uns."
+}

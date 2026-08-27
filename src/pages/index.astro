@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeContent from '../components/site/pages/HomeContent.jsx';
+import { getCollection, getEntry } from 'astro:content';
+
+const instructors = await getCollection('instructors');
+const dominik = instructors.find(i => i.id === 'dominik')?.data;
+const content = (await getEntry('homePage', 'home'))?.data;
+const settings = (await getEntry('settings', 'global'))?.data;
+---
+<Layout active="home" title="Start">
+  <HomeContent client:load dominikImage={dominik?.image} content={content} settings={settings} />
+</Layout>

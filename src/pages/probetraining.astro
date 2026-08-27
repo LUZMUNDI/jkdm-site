@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TrialContent from '../components/site/pages/TrialContent.jsx';
+import { getEntry } from 'astro:content';
+
+const content = (await getEntry('trialPage', 'trial'))?.data;
+---
+<Layout active="trial" title="Probetraining">
+  <TrialContent client:load content={content} />
+</Layout>

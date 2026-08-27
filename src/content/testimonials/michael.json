@@ -1,0 +1,12 @@
+{
+  "order": 2,
+  "name": "Michael",
+  "initial": "M",
+  "image": "/assets/student-michael.png",
+  "isReal": true,
+  "disc": "Trainer · Bruce-Lee-Fan",
+  "since": "10 Jahre Kampfkunst",
+  "style": "Sparring",
+  "quote": "Zehn Jahre Kampfkunst, und ich bin noch nicht fertig. Bei mir kannst du sicher sein: du bekommst eine gute Sparringssession. Ich helfe dir, deine Grenzen zu verschieben und besser zu werden.",
+  "stats": [{"value":"10","label":"Jahre Kampfkunst"},{"value":"Trainer","label":"Rolle"},{"value":"Sparring","label":"Schwerpunkt"}]
+}

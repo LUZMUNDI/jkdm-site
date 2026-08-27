@@ -1,0 +1,12 @@
+{
+  "order": 4,
+  "name": "Miriam",
+  "initial": "M",
+  "image": null,
+  "isReal": false,
+  "disc": "Wing Chun",
+  "since": "seit 2021",
+  "style": "Präzision",
+  "quote": "Ich bin 1,62 m. Nach dem ersten Abend mit Si-Je Kathi war mir egal, wie groß mein Gegenüber ist.",
+  "stats": [{"value":"2021","label":"Dabei seit"},{"value":"詠春","label":"Wing Chun"}]
+}
