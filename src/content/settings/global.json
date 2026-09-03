@@ -1,5 +1,5 @@
 {
-  "probetrainingPrice": "20 €",
+  "probetrainingPrice": "10 €",
   "monthlyPriceFrom": "ab 45 €",
   "bookPrice": "15 €",
   "bookCopiesSold": "15.000",
@@ -14,6 +14,13 @@
   "footerBlurb": "Jeet Kune Do München. Privates Studio in Obergiesing-Ramersdorf, gegründet 2017 von Sifu Dominik Rettig.",
   "footerBlurbBold": "Fünf Stile, zwei Abende, eine Linie — seit 1992 weitergegeben.",
   "ctaBandHeadline": "Ein Abend bei uns. Dann gehörst du dazu.",
-  "ctaBandBody": "Der erste Abend kostet 20 €. Danach entscheidest du, ob du zur Linie gehörst — und wir freuen uns, wenn ja.",
-  "ctaBandButton": "Jetzt Probetraining buchen"
+  "ctaBandBody": "Der erste Abend kostet {{price}}. Danach entscheidest du, ob du zur Linie gehörst — und wir freuen uns, wenn ja.",
+  "ctaBandButton": "Jetzt Probetraining buchen",
+  "navHomeLabel": "Main Menu",
+  "navAboutLabel": "Story Mode",
+  "navTrainingLabel": "Training Mode",
+  "navVoicesLabel": "Roster",
+  "navBookLabel": "Archive",
+  "navSeminarsLabel": "Side Quests",
+  "contactEmail": ""
 }
