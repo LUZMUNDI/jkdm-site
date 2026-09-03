@@ -1,0 +1,36 @@
+:root{
+/* --- base: void / ash / red -------------------------------------------- */
+--void:#070605;              /* page background */
+--void-2:#0b0908;            /* section band, one step up from page */
+--panel:#121110;             /* card / panel surface */
+--panel-2:#1a1817;           /* raised panel, hover surface */
+
+--ash:#F4F1EC;               /* primary text, logo, hairline source */
+--ash-dim:rgba(244,241,236,.45);   /* secondary text */
+--ash-faint:rgba(244,241,236,.18); /* hairline borders */
+--ash-ghost:rgba(244,241,236,.06); /* fills, inert tracks */
+
+--red:#E31C36;               /* the one accent */
+--red-deep:#7A0E1E;          /* hard offset shadow, pressed fill */
+--red-glow:rgba(227,28,54,.45);    /* hover glow, ember light */
+--red-ember:rgba(227,28,54,.14);   /* ember/particle wash, tinted fills */
+
+/* --- semantic aliases -------------------------------------------------- */
+--bg-page:var(--void);
+--bg-band:var(--void-2);
+--surface-card:var(--panel);
+--surface-raised:var(--panel-2);
+
+--text-primary:var(--ash);
+--text-secondary:var(--ash-dim);
+--text-accent:var(--red);
+--text-on-accent:var(--ash);
+
+--border-hairline:var(--ash-faint);
+--border-strong:rgba(244,241,236,.32);
+--border-accent:var(--red);
+
+--accent:var(--red);
+--accent-press:var(--red-deep);
+--focus-ring:var(--red);
+}

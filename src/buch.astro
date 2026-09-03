@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BookContent from '../components/site/pages/BookContent.jsx';
+import { getSettings, getPageContent } from '../lib/content';
+
+const settings = await getSettings();
+const content = await getPageContent('bookPage', 'book', settings);
+---
+<Layout active="book" title="Das Buch">
+  <BookContent client:load content={content} settings={settings} />
+</Layout>

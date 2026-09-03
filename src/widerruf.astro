@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalContent from '../components/site/pages/LegalContent.jsx';
+import { getEntry } from 'astro:content';
+
+const page = (await getEntry('widerrufPage', 'widerruf'))?.data;
+---
+<Layout active="" title={page?.title || 'Widerrufsbelehrung'}>
+  <LegalContent client:load page={page} />
+</Layout>

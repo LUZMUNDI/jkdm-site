@@ -1,0 +1,26 @@
+:root{
+/* the one button shadow: hard, no blur, red-deep */
+--shadow-press:6px 6px 0 var(--red-deep);
+--shadow-press-sm:4px 4px 0 var(--red-deep);
+--press-travel:6px; /* @kind spacing */
+
+--shadow-panel:0 24px 60px rgba(0,0,0,.65);
+--shadow-lift:0 12px 32px rgba(0,0,0,.55);
+--glow-red:0 0 16px rgba(227,28,54,.22);
+--glow-red-soft:0 0 10px rgba(227,28,54,.16);
+
+/* metallic/chrome wordmark: banded light-to-dark clipped to text */
+--chrome-gradient:linear-gradient(180deg,#ffffff 0%,#e8e4dd 22%,#8f8b85 46%,#f6f3ee 52%,#b8b3ac 62%,#6d6a66 80%,#cfcac2 100%); /* @kind other */
+--chrome-shadow:0 1px 3px rgba(0,0,0,.55); /* @kind shadow */
+
+/* ember-lit portrait vignette */
+--vignette-ember:radial-gradient(120% 80% at 50% 65%,rgba(227,28,54,.28) 0%,rgba(122,14,30,.18) 38%,rgba(7,6,5,0) 72%); /* @kind other */
+--fade-bottom:linear-gradient(180deg,rgba(7,6,5,0) 40%,rgba(7,6,5,.9) 88%,var(--void) 100%); /* @kind other */
+
+--ease-out:cubic-bezier(.16,.84,.44,1); /* @kind other */
+--ease-snap:cubic-bezier(.2,.9,.2,1); /* @kind other */
+--dur-fast:120ms; /* @kind other */
+--dur:200ms; /* @kind other */
+--dur-slow:420ms; /* @kind other */
+--dur-ember:9s; /* @kind other */
+}

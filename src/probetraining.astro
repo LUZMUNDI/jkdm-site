@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TrialContent from '../components/site/pages/TrialContent.jsx';
+import { getSettings, getPageContent } from '../lib/content';
+
+const settings = await getSettings();
+const content = await getPageContent('trialPage', 'trial', settings);
+---
+<Layout active="trial" title="Probetraining">
+  <TrialContent client:load content={content} settings={settings} />
+</Layout>
