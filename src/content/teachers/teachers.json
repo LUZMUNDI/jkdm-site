@@ -1,15 +1,15 @@
 {
   "teachers": [
     {
-      "slug": "dominik",
+      "bio": "Angefangen hat es mit Judo beim TSV-Großhadern — danach Wing Tsun, Krav Maga, Pencak Silat, und irgendwann die Erkenntnis, dass kein Stil allein reicht. Heute ist Dominik Full Instructor in Jeet Kune Do Concepts und führt sein eigenes Studio in München. Er sieht in zwei Sekunden, was an deiner Deckung nicht stimmt — und sagt es dir auch.",
       "name": "Sifu Dominik",
-      "short": "Sifu Dominik",
+      "slug": "dominik",
+      "tagline": "Seit 1992 auf der Matte. Seit 2017 dein Lehrer.",
       "role": "Gründer · JKD",
       "title": "Gründer · Full Instructor Jeet Kune Do Concepts",
-      "tagline": "Seit 1992 auf der Matte. Seit 2017 dein Lehrer.",
-      "bio": "Angefangen hat es mit Judo beim TSV-Großhadern — danach Wing Tsun, Krav Maga, Pencak Silat, und irgendwann die Erkenntnis, dass kein Stil allein reicht. Heute ist Dominik Full Instructor in Jeet Kune Do Concepts und führt sein eigenes Studio in München. Er sieht in zwei Sekunden, was an deiner Deckung nicht stimmt — und sagt es dir auch.",
       "brush": "師父",
       "image": "/assets/portrait-dominik.png",
+      "short": "Sifu Dominik",
       "stats": [
         {
           "value": "1992",
@@ -30,15 +30,15 @@
       ]
     },
     {
-      "slug": "kathi",
+      "bio": "Kathi studiert Wing Chun seit 2012 und hat sich auf Nervendruckpunkte spezialisiert — die Technik, mit der Präzision jeden Größenunterschied auffrisst. Bei ihr studieren Kinder und Jugendliche, und sie schafft es, dass 14-Jährige freiwillig konzentriert sind. Wer glaubt, Wing Chun sei sanft, hat noch nicht mit ihr geübt.",
       "name": "Si-Je Kathi",
-      "short": "Si-Je Kathi",
+      "slug": "kathi",
+      "tagline": "Kennt die Punkte, an denen Kraft keine Rolle mehr spielt.",
       "role": "Wing Chun",
       "title": "Wing Chun · Kinder & Jugend · Nervendruckpunkte",
-      "tagline": "Kennt die Punkte, an denen Kraft keine Rolle mehr spielt.",
-      "bio": "Kathi studiert Wing Chun seit 2012 und hat sich auf Nervendruckpunkte spezialisiert — die Technik, mit der Präzision jeden Größenunterschied auffrisst. Bei ihr studieren Kinder und Jugendliche, und sie schafft es, dass 14-Jährige freiwillig konzentriert sind. Wer glaubt, Wing Chun sei sanft, hat noch nicht mit ihr geübt.",
       "brush": "詠春",
       "image": "/assets/portrait-katharina.png",
+      "short": "Si-Je Kathi",
       "stats": [
         {
           "value": "2012",
@@ -59,15 +59,15 @@
       ]
     },
     {
-      "slug": "jakob",
+      "bio": "Jakob kam 2021 als Schüler ins Studio — ohne Vorerfahrung, wie fast alle — und hat sich bis zum Selbstverteidigungstrainer hochstudiert. Genau deshalb weiß er noch ganz genau, wie sich der erste Abend anfühlt, und holt dich da ab, wo du wirklich stehst.",
       "name": "Si-hing Jakob",
-      "short": "Si-hing Jakob",
+      "slug": "jakob",
+      "tagline": "Stand 2021 selbst zum ersten Mal in dieser Tür.",
       "role": "Selbstverteidigung",
       "title": "Jeet Kune Do · Vom Schüler zum Trainer",
-      "tagline": "Stand 2021 selbst zum ersten Mal in dieser Tür.",
-      "bio": "Jakob kam 2021 als Schüler ins Studio — ohne Vorerfahrung, wie fast alle — und hat sich bis zum Selbstverteidigungstrainer hochstudiert. Genau deshalb weiß er noch ganz genau, wie sich der erste Abend anfühlt, und holt dich da ab, wo du wirklich stehst.",
       "brush": "護身",
       "image": "/assets/portrait-jakob.png",
+      "short": "Si-hing Jakob",
       "stats": [
         {
           "value": "2021",
@@ -82,6 +82,17 @@
           "label": "Fokus"
         }
       ]
+    },
+    {
+      "bio": "Test",
+      "name": "Test",
+      "slug": "Test",
+      "tagline": "Test",
+      "role": "Test",
+      "title": "Test",
+      "brush": "A",
+      "image": "/assets/uploads/martin.png",
+      "short": "Test"
     }
   ]
 }
