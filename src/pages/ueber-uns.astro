@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import AboutContent from '../components/site/pages/AboutContent.jsx';
-import { getCollection, getEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+import { getSettings, getPageContent } from '../lib/content';
 
-const instructors = (await getCollection('instructors'))
-  .sort((a, b) => a.data.order - b.data.order)
-  .map(i => ({ id: i.id, ...i.data }));
-const settings = (await getEntry('settings', 'global'))?.data;
+const roster = ((await getEntry('teachers', 'teachers'))?.data.teachers || [])
+  .map(t => ({ id: t.slug, ...t }));
+const settings = await getSettings();
+const page = await getPageContent('aboutPage', 'about', settings);
 ---
-<Layout active="about" title="Über uns">
-  <AboutContent client:load roster={instructors} settings={settings} />
+<Layout active="about" title={page?.title || 'Über uns'}>
+  <AboutContent client:load roster={roster} settings={settings} page={page} />
 </Layout>

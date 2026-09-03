@@ -1,10 +1,19 @@
 {
-  "headline": "Ein Abend. Zwanzig Euro. Bist du dabei?",
+  "headline": "Ein Abend. {{price}}. Bist du dabei?",
   "subhead": "Kein Vertrag, keine Verkaufsrunde. Du kommst Mittwoch 19:00 oder Sonntag 18:00, stehst mit uns in der Reihe und entscheidest danach selbst.",
   "statPills": [
-    {"value": "20 €", "label": "Probetraining"},
-    {"value": "Mi 19:00", "label": "So 18:00"},
-    {"value": "Redlingerstr. 7", "label": "U5 Michaelibad"}
+    {
+      "value": "{{price}}",
+      "label": "Probetraining"
+    },
+    {
+      "value": "Mi 19:00",
+      "label": "So 18:00"
+    },
+    {
+      "value": "Redlingerstr. 7",
+      "label": "U5 Michaelibad"
+    }
   ],
   "whyOptions": [
     "Ich will mich verteidigen können. Punkt.",

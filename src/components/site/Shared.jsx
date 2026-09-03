@@ -4,9 +4,9 @@ import { Button } from "../ds/core/Button.jsx";
 
 export const jkdmShell = { maxWidth: "var(--container)", margin: "0 auto", padding: "0 var(--gutter)" };
 
-export function Section({ children, label, title, lead, tone = "page", style }) {
+export function Section({ children, label, title, lead, tone = "page", style, id }) {
   return (
-    <section style={{ background: tone === "band" ? "var(--bg-band)" : "var(--bg-page)",
+    <section id={id} style={{ background: tone === "band" ? "var(--bg-band)" : "var(--bg-page)",
       padding: "var(--section-y) 0", borderTop: "var(--hairline) solid var(--border-hairline)", ...style }}>
       <div style={jkdmShell}>
         {(label || title || lead) && <div style={{ maxWidth: "48ch", marginBottom: "var(--space-7)", display: "flex", flexDirection: "column", gap: "var(--space-4)" }}>
@@ -99,7 +99,9 @@ export function SiteFooter({ settings }) {
           <a href="/probetraining">Probetraining {probetrainingPrice} →</a>
           <a href="/training">Trainingsformate</a>
           <a href="/buch">Das Buch — {bookPrice}</a>
-          <span style={{ marginTop: "var(--space-3)", fontSize: "var(--text-xs)", color: "var(--ash-dim)" }}>Impressum · Datenschutz · Kontakt</span>
+          <span style={{ marginTop: "var(--space-3)", fontSize: "var(--text-xs)", color: "var(--ash-dim)" }}>
+            <a href="/impressum" style={{ color: "inherit" }}>Impressum</a> · <a href="/datenschutz" style={{ color: "inherit" }}>Datenschutz</a>{s.contactEmail && <> · <a href={`mailto:${s.contactEmail}`} style={{ color: "inherit" }}>Kontakt</a></>}
+          </span>
         </div>
         <div style={col}>
           <SectionLabel rule={false}>Folg uns</SectionLabel>
