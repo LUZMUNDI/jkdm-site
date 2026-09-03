@@ -82,17 +82,6 @@
           "label": "Fokus"
         }
       ]
-    },
-    {
-      "bio": "Test",
-      "name": "Test",
-      "slug": "Test",
-      "tagline": "Test",
-      "role": "Test",
-      "title": "Test",
-      "brush": "A",
-      "image": "/assets/uploads/martin.png",
-      "short": "Test"
     }
   ]
 }
