@@ -1,14 +1,14 @@
 {
   "students": [
     {
-      "slug": "ana",
-      "name": "King J",
       "initial": "J",
-      "image": "/assets/uploads/julian.png",
       "isReal": false,
+      "name": "King J",
+      "slug": "ana",
+      "style": "Timing",
       "disc": "Jeet Kune Do",
       "since": "seit 2020",
-      "style": "Timing",
+      "image": "/assets/uploads/julian.png",
       "quote": "Sifu korrigiert dich zweimal. Beim dritten Mal grinst er nur — und du weißt genau, was gemeint ist.",
       "stats": [
         {
@@ -22,89 +22,14 @@
       ]
     },
     {
-      "slug": "claudia",
-      "name": "Claudia",
-      "initial": "C",
-      "image": "/assets/uploads/claudia.png",
-      "isReal": false,
-      "disc": "Eltern · Kindertraining",
-      "since": "seit 2022",
-      "style": "Geduld",
-      "quote": "Mein Sohn geht freiwillig hin. Freiwillig. Fragt sonst nie nach Sport.",
-      "stats": [
-        {
-          "value": "2022",
-          "label": "Dabei seit"
-        },
-        {
-          "value": "Teens",
-          "label": "Gruppe"
-        }
-      ]
-    },
-    {
-      "slug": "felix",
-      "name": "Jin",
-      "initial": "J",
-      "image": "/assets/uploads/jin.png",
-      "isReal": false,
-      "disc": "Wing Chun",
-      "since": "seit 2024",
-      "style": "Struktur",
-      "quote": "Keine Show, keine Pokale an der Wand. Nur Technik, die funktioniert — und Leute, die wollen, dass du sie kannst.",
-      "stats": [
-        {
-          "value": "2024",
-          "label": "Dabei seit"
-        },
-        {
-          "value": "詠春",
-          "label": "Wing Chun"
-        }
-      ]
-    },
-    {
-      "slug": "ingrid",
-      "name": "Bianca",
-      "initial": "I",
-      "image": "/assets/uploads/bianca.png",
-      "isReal": false,
-      "disc": "Chen Tai Chi",
-      "since": "seit 2017",
-      "style": "Wurzel",
-      "quote": "Tai Chi war der Teil, über den ich vorher gelacht habe. Jetzt ist es der Teil, den ich nicht ausfallen lassen will.",
-      "stats": [
-        {
-          "value": "2017",
-          "label": "Dabei seit"
-        },
-        {
-          "value": "太極",
-          "label": "Chen Tai Chi"
-        }
-      ]
-    },
-    {
-      "slug": "jin",
-      "name": "Jin",
-      "initial": "Jin",
-      "image": "/assets/uploads/jin_and_devil_jin.webp",
-      "isReal": false,
-      "disc": "Fighting",
-      "since": "2000",
-      "style": "Street fight",
-      "quote": "I WILL KILL YOU!",
-      "stats": []
-    },
-    {
-      "slug": "luciano",
-      "name": "Luciano",
       "initial": "L",
-      "image": "/assets/student-luciano.png",
       "isReal": true,
+      "name": "Luciano",
+      "slug": "luciano",
+      "style": "Orangegurt",
       "disc": "Jeet Kune Do · Pencak Silat",
       "since": "seit 2025",
-      "style": "Orangegurt",
+      "image": "/assets/student-luciano.png",
       "quote": "Ich studiere jetzt fast ein Jahr hier und will einfach mal sagen, wie glücklich mich das macht. Danke an meinen Lehrer und an meine Trainingspartner. Ich habe so viel gelernt — die praktischen Techniken, die Atemarbeit, die Philosophie, das Zusammenkommen. Es hat mein Leben verändert: angefangen habe ich mit Weissgurt, heute trage ich Orange.",
       "stats": [
         {
@@ -122,35 +47,14 @@
       ]
     },
     {
-      "slug": "marco",
-      "name": "Martin",
       "initial": "M",
-      "image": "/assets/uploads/martin.png",
-      "isReal": false,
-      "disc": "Pencak Silat",
-      "since": "seit 2018",
-      "style": "Druck",
-      "quote": "Ich komme aus dem Fitnessstudio. Hier bin ich nach 90 Minuten platt — und kann etwas, das ich vorher nicht konnte.",
-      "stats": [
-        {
-          "value": "2018",
-          "label": "Dabei seit"
-        },
-        {
-          "value": "Silat",
-          "label": "Schwerpunkt"
-        }
-      ]
-    },
-    {
-      "slug": "michael",
-      "name": "Michael",
-      "initial": "M",
-      "image": "/assets/student-michael.png",
       "isReal": true,
+      "name": "Michael",
+      "slug": "michael",
+      "style": "Sparring",
       "disc": "Trainer · Bruce-Lee-Fan",
       "since": "10 Jahre Kampfkunst",
-      "style": "Sparring",
+      "image": "/assets/student-michael.png",
       "quote": "Zehn Jahre Kampfkunst, und ich bin noch nicht fertig. Bei mir kannst du sicher sein: du bekommst eine gute Sparringssession. Ich helfe dir, deine Grenzen zu verschieben und besser zu werden.",
       "stats": [
         {
@@ -168,14 +72,110 @@
       ]
     },
     {
-      "slug": "sebastian",
-      "name": "Sebastian",
-      "initial": "S",
-      "image": null,
+      "initial": "I",
       "isReal": false,
+      "name": "Bianca",
+      "slug": "ingrid",
+      "style": "Wurzel",
+      "disc": "Chen Tai Chi",
+      "since": "seit 2017",
+      "image": "/assets/uploads/bianca.png",
+      "quote": "Tai Chi war der Teil, über den ich vorher gelacht habe. Jetzt ist es der Teil, den ich nicht ausfallen lassen will.",
+      "stats": [
+        {
+          "value": "2017",
+          "label": "Dabei seit"
+        },
+        {
+          "value": "太極",
+          "label": "Chen Tai Chi"
+        }
+      ]
+    },
+    {
+      "initial": "C",
+      "isReal": false,
+      "name": "Claudia",
+      "slug": "claudia",
+      "style": "Geduld",
+      "disc": "Eltern · Kindertraining",
+      "since": "seit 2022",
+      "image": "/assets/uploads/claudia.png",
+      "quote": "Mein Sohn geht freiwillig hin. Freiwillig. Fragt sonst nie nach Sport.",
+      "stats": [
+        {
+          "value": "2022",
+          "label": "Dabei seit"
+        },
+        {
+          "value": "Teens",
+          "label": "Gruppe"
+        }
+      ]
+    },
+    {
+      "initial": "J",
+      "isReal": false,
+      "name": "Jin",
+      "slug": "felix",
+      "style": "Struktur",
+      "disc": "Wing Chun",
+      "since": "seit 2024",
+      "image": "/assets/uploads/jin.png",
+      "quote": "Keine Show, keine Pokale an der Wand. Nur Technik, die funktioniert — und Leute, die wollen, dass du sie kannst.",
+      "stats": [
+        {
+          "value": "2024",
+          "label": "Dabei seit"
+        },
+        {
+          "value": "詠春",
+          "label": "Wing Chun"
+        }
+      ]
+    },
+    {
+      "initial": "Jin",
+      "isReal": false,
+      "name": "Jin",
+      "slug": "Evil Jin",
+      "style": "Street fight",
+      "disc": "Fighting",
+      "since": "2000",
+      "image": "/assets/uploads/jin_and_devil_jin.webp",
+      "quote": "I WILL KILL YOU!",
+      "stats": []
+    },
+    {
+      "initial": "M",
+      "isReal": false,
+      "name": "Martin",
+      "slug": "marco",
+      "style": "Druck",
+      "disc": "Pencak Silat",
+      "since": "seit 2018",
+      "image": "/assets/uploads/martin.png",
+      "quote": "Ich komme aus dem Fitnessstudio. Hier bin ich nach 90 Minuten platt — und kann etwas, das ich vorher nicht konnte.",
+      "stats": [
+        {
+          "value": "2018",
+          "label": "Dabei seit"
+        },
+        {
+          "value": "Silat",
+          "label": "Schwerpunkt"
+        }
+      ]
+    },
+    {
+      "initial": "S",
+      "isReal": false,
+      "name": "Sebastian",
+      "slug": "sebastian",
+      "style": "Ruhe",
       "disc": "Selbstverteidigung",
       "since": "seit 2023",
-      "style": "Ruhe",
+      "image": null,
       "quote": "Ich wollte eigentlich nur einmal reinschauen. Das war vor zwei Jahren — und ich stehe immer noch in der Reihe.",
       "stats": [
         {
@@ -189,14 +189,14 @@
       ]
     },
     {
-      "slug": "tobias",
-      "name": "Tobias",
       "initial": "T",
-      "image": null,
       "isReal": false,
+      "name": "Tobias",
+      "slug": "tobias",
+      "style": "Reflex",
       "disc": "Jeet Kune Do",
       "since": "seit 2019",
-      "style": "Reflex",
+      "image": null,
       "quote": "Nach drei Monaten habe ich zum ersten Mal gemerkt, dass mein Körper schneller reagiert als mein Kopf. Ziemlich verrückt.",
       "stats": [
         {
