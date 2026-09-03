@@ -87,8 +87,8 @@
     {
       "initial": "Jin",
       "isReal": false,
-      "name": "Jin",
-      "slug": "jin",
+      "name": "Evil Jin",
+      "slug": "Evil Jin",
       "style": "Street fight",
       "disc": "Fighting",
       "since": "2000",
@@ -168,14 +168,14 @@
       ]
     },
     {
-      "initial": "C",
+      "initial": "S",
       "isReal": false,
-      "name": "Cavanni",
-      "slug": "Cavanni",
+      "name": "Sebastian",
+      "slug": "sebastian",
       "style": "Ruhe",
       "disc": "Selbstverteidigung",
       "since": "seit 2023",
-      "image": "/assets/uploads/pantera.png",
+      "image": null,
       "quote": "Ich wollte eigentlich nur einmal reinschauen. Das war vor zwei Jahren — und ich stehe immer noch in der Reihe.",
       "stats": [
         {
@@ -189,14 +189,14 @@
       ]
     },
     {
-      "initial": "B",
+      "initial": "T",
       "isReal": false,
-      "name": "Beast",
-      "slug": "Beast",
+      "name": "Tobias",
+      "slug": "tobias",
       "style": "Reflex",
       "disc": "Jeet Kune Do",
       "since": "seit 2019",
-      "image": "/assets/uploads/final-boss.png",
+      "image": null,
       "quote": "Nach drei Monaten habe ich zum ersten Mal gemerkt, dass mein Körper schneller reagiert als mein Kopf. Ziemlich verrückt.",
       "stats": [
         {
