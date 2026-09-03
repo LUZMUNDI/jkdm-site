@@ -14,7 +14,7 @@ const instructors = defineCollection({
     bio: z.string(),
     brush: z.string(),
     image: z.string(),
-    stats: z.array(statPair)
+    stats: z.array(statPair).default([])
   })
 });
 
@@ -30,7 +30,7 @@ const testimonials = defineCollection({
     since: z.string(),
     style: z.string(),
     quote: z.string(),
-    stats: z.array(statPair)
+    stats: z.array(statPair).default([])
   })
 });
 
