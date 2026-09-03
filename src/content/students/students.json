@@ -136,7 +136,7 @@
     },
     {
       "initial": "Jin",
-      "isReal": false,
+      "isReal": true,
       "name": "Jin",
       "slug": "Evil Jin",
       "style": "Street fight",
