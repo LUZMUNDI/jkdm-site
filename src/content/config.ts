@@ -2,39 +2,50 @@ import { defineCollection, z } from 'astro:content';
 
 const statPair = z.object({ value: z.string(), label: z.string() });
 
-const instructors = defineCollection({
+// Instructors and testimonials each live in ONE json file as a drag-reorderable
+// list in the CMS (Decap's list widget supports native drag-and-drop + add/remove),
+// instead of one file per person. Array order = display order, no manual number needed.
+const teacherItem = z.object({
+  slug: z.string(),
+  name: z.string(),
+  short: z.string(),
+  role: z.string(),
+  title: z.string(),
+  tagline: z.string(),
+  bio: z.string(),
+  brush: z.string(),
+  image: z.string(),
+  stats: z.array(statPair).default([])
+});
+
+const teachers = defineCollection({
   type: 'data',
   schema: z.object({
-    order: z.number(),
-    name: z.string(),
-    short: z.string(),
-    role: z.string(),
-    title: z.string(),
-    tagline: z.string(),
-    bio: z.string(),
-    brush: z.string(),
-    image: z.string(),
-    stats: z.array(statPair)
+    teachers: z.array(teacherItem)
   })
 });
 
-const testimonials = defineCollection({
+const studentItem = z.object({
+  slug: z.string(),
+  name: z.string(),
+  initial: z.string(),
+  image: z.string().nullable().optional(),
+  isReal: z.boolean().default(false),
+  disc: z.string(),
+  since: z.string(),
+  style: z.string(),
+  quote: z.string(),
+  stats: z.array(statPair).default([])
+});
+
+const students = defineCollection({
   type: 'data',
   schema: z.object({
-    order: z.number(),
-    name: z.string(),
-    initial: z.string(),
-    image: z.string().nullable().optional(),
-    isReal: z.boolean().default(false),
-    disc: z.string(),
-    since: z.string(),
-    style: z.string(),
-    quote: z.string(),
-    stats: z.array(statPair)
+    students: z.array(studentItem)
   })
 });
 
-// Site-wide settings used across pages (footer, CTA band, prices, address).
+// Site-wide settings used across pages (footer, CTA band, prices, address, nav labels).
 const settings = defineCollection({
   type: 'data',
   schema: z.object({
@@ -54,7 +65,60 @@ const settings = defineCollection({
     footerBlurbBold: z.string(),
     ctaBandHeadline: z.string(),
     ctaBandBody: z.string(),
-    ctaBandButton: z.string()
+    ctaBandButton: z.string(),
+    navHomeLabel: z.string().default('Main Menu'),
+    navAboutLabel: z.string().default('Story Mode'),
+    navTrainingLabel: z.string().default('Training Mode'),
+    navVoicesLabel: z.string().default('Roster'),
+    navBookLabel: z.string().default('Archive'),
+    navSeminarsLabel: z.string().default('Side Quests'),
+    contactEmail: z.string().default('')
+  })
+});
+
+// In-page title/subhead text for pages whose nav label is edited separately above.
+const aboutPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    mode: z.string().default('Story Mode'),
+    title: z.string().default('\u00dcber uns'),
+    subhead: z.string().default('Drei Lehrer, eine Linie. Klick dich durch \u2014 einer von ihnen wird dir bald sagen, dass deine Deckung unten ist.')
+  })
+});
+
+const voicesPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    mode: z.string().default('Character Select'),
+    title: z.string().default('Stimmen'),
+    subhead: z.string().default('Zehn Sch\u00fcler, zehn Wege in dieselbe Linie. Klick dich durch die Reihe.'),
+    disclosureText: z.string().default('').optional()
+  })
+});
+
+const seminarsPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    mode: z.string().default('Side Quests'),
+    title: z.string().default('Seminare'),
+    subhead: z.string().default('Sondertrainings, Gastlehrer und Themenabende \u2014 abseits des regul\u00e4ren Stundenplans.')
+  })
+});
+
+const seminars = defineCollection({
+  type: 'data',
+  schema: z.object({
+    order: z.number(),
+    title: z.string(),
+    dateLabel: z.string(),
+    location: z.string().optional(),
+    badge: z.string().optional(),
+    summary: z.string(),
+    body: z.string(),
+    image: z.string().nullable().optional(),
+    gallery: z.array(z.string()).default([]),
+    ctaLabel: z.string().default('Jetzt anmelden'),
+    ctaHref: z.string().default('/probetraining')
   })
 });
 
@@ -114,7 +178,15 @@ const bookPage = defineCollection({
     statCards: z.array(z.object({ value: z.string(), label: z.string(), note: z.string() })),
     primaryButton: z.string(),
     secondaryButton: z.string(),
-    badgeText: z.string()
+    badgeText: z.string(),
+    transferTitle: z.string().default('Per Überweisung bestellen'),
+    transferIntro: z.string().default(''),
+    transferAccountHolder: z.string().default(''),
+    transferIban: z.string().default(''),
+    transferBic: z.string().default(''),
+    transferReferenceHint: z.string().default(''),
+    transferNote: z.string().default(''),
+    transferButtonLabel: z.string().default('Zahlungsbeleg senden')
   })
 });
 
@@ -132,4 +204,30 @@ const trialPage = defineCollection({
   })
 });
 
-export const collections = { instructors, testimonials, settings, homePage, trainingPage, bookPage, trialPage };
+const legalSection = z.object({ heading: z.string(), body: z.string() });
+
+const impressumPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    title: z.string().default('Impressum'),
+    sections: z.array(legalSection).default([])
+  })
+});
+
+const datenschutzPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    title: z.string().default('Datenschutzerklärung'),
+    sections: z.array(legalSection).default([])
+  })
+});
+
+const widerrufPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    title: z.string().default('Widerrufsbelehrung'),
+    sections: z.array(legalSection).default([])
+  })
+});
+
+export const collections = { teachers, students, settings, homePage, trainingPage, bookPage, trialPage, aboutPage, voicesPage, seminarsPage, seminars, impressumPage, datenschutzPage, widerrufPage };

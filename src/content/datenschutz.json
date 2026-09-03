@@ -1,0 +1,33 @@
+{
+  "title": "Datenschutzerklärung",
+  "sections": [
+    {
+      "heading": "Verantwortlicher",
+      "body": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:\nJeet Kune Do München, Dominik Rettig\nRedlingerstr. 7, 81735 München\nE-Mail: jkd-muenchen@web.de"
+    },
+    {
+      "heading": "Hosting",
+      "body": "Diese Website wird bei Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA) gehostet. Beim Aufruf der Website verarbeitet Cloudflare automatisch technische Daten wie IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite und verwendeten Browser, um die Website sicher und zuverlässig auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen: https://www.cloudflare.com/privacypolicy/"
+    },
+    {
+      "heading": "Anmeldeformular (Probetraining)",
+      "body": "Sobald das Anmeldeformular auf der Seite „Probetraining\" aktiv ist, werden die von dir eingegebenen Daten (Name, E-Mail, optional Telefonnummer, Wunschtermin, Nachricht) an unseren Formular-Dienstleister übermittelt, der uns deine Anfrage per E-Mail zustellt. Die Verarbeitung erfolgt auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) bzw. zur Anbahnung eines Vertrages (Art. 6 Abs. 1 lit. b DSGVO). Eine Weitergabe an Dritte über den Formular-Dienstleister hinaus findet nicht statt."
+    },
+    {
+      "heading": "Buchbestellung per Überweisung",
+      "body": "Wenn du das Buch per Überweisung bestellst, öffnet der entsprechende Button dein eigenes E-Mail-Programm mit einem vorausgefüllten Entwurf. Diese Nachricht wird direkt von deinem Gerät an unsere E-Mail-Adresse gesendet — die Daten laufen dabei nicht über unseren Server oder eine dritte Partei. Informationen zu deinem gesetzlichen Widerrufsrecht bei dieser Bestellung findest du in unserer Widerrufsbelehrung."
+    },
+    {
+      "heading": "Keine Cookies, kein Tracking",
+      "body": "Diese Website verwendet aktuell keine Analyse- oder Marketing-Cookies und kein Tracking-Tool wie Google Analytics. Es werden keine Cookies zur Nachverfolgung deines Verhaltens gesetzt."
+    },
+    {
+      "heading": "Deine Rechte",
+      "body": "Du hast jederzeit das Recht auf Auskunft über deine bei uns gespeicherten Daten, auf Berichtigung, Löschung oder Einschränkung der Verarbeitung sowie auf Datenübertragbarkeit. Außerdem kannst du dich bei der zuständigen Datenschutz-Aufsichtsbehörde beschweren. Bei Fragen wende dich einfach an die oben genannte E-Mail-Adresse."
+    },
+    {
+      "heading": "Änderungen dieser Erklärung",
+      "body": "Diese Datenschutzerklärung wird angepasst, sobald sich die Datenverarbeitung auf dieser Website ändert (z. B. beim Hinzufügen von Analyse-Tools). Stand: September 2026."
+    }
+  ]
+}
