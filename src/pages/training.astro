@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import TrainingContent from '../components/site/pages/TrainingContent.jsx';
-import { getCollection } from 'astro:content';
+import { getEntry } from 'astro:content';
 import { getSettings, getPageContent } from '../lib/content';
 
-const instructors = await getCollection('instructors');
-const jakob = instructors.find(i => i.id === 'jakob')?.data;
+const teachers = (await getEntry('teachers', 'teachers'))?.data.teachers || [];
+const jakob = teachers.find(t => t.slug === 'jakob');
 const settings = await getSettings();
 const content = await getPageContent('trainingPage', 'training', settings);
 ---

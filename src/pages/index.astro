@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HomeContent from '../components/site/pages/HomeContent.jsx';
-import { getCollection } from 'astro:content';
+import { getEntry } from 'astro:content';
 import { getSettings, getPageContent } from '../lib/content';
 
-const instructors = await getCollection('instructors');
-const dominik = instructors.find(i => i.id === 'dominik')?.data;
+const teachers = (await getEntry('teachers', 'teachers'))?.data.teachers || [];
+const dominik = teachers.find(t => t.slug === 'dominik');
 const settings = await getSettings();
 const content = await getPageContent('homePage', 'home', settings);
 ---

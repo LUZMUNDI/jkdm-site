@@ -2,35 +2,46 @@ import { defineCollection, z } from 'astro:content';
 
 const statPair = z.object({ value: z.string(), label: z.string() });
 
-const instructors = defineCollection({
+// Instructors and testimonials each live in ONE json file as a drag-reorderable
+// list in the CMS (Decap's list widget supports native drag-and-drop + add/remove),
+// instead of one file per person. Array order = display order, no manual number needed.
+const teacherItem = z.object({
+  slug: z.string(),
+  name: z.string(),
+  short: z.string(),
+  role: z.string(),
+  title: z.string(),
+  tagline: z.string(),
+  bio: z.string(),
+  brush: z.string(),
+  image: z.string(),
+  stats: z.array(statPair).default([])
+});
+
+const teachers = defineCollection({
   type: 'data',
   schema: z.object({
-    order: z.number(),
-    name: z.string(),
-    short: z.string(),
-    role: z.string(),
-    title: z.string(),
-    tagline: z.string(),
-    bio: z.string(),
-    brush: z.string(),
-    image: z.string(),
-    stats: z.array(statPair).default([])
+    teachers: z.array(teacherItem)
   })
 });
 
-const testimonials = defineCollection({
+const studentItem = z.object({
+  slug: z.string(),
+  name: z.string(),
+  initial: z.string(),
+  image: z.string().nullable().optional(),
+  isReal: z.boolean().default(false),
+  disc: z.string(),
+  since: z.string(),
+  style: z.string(),
+  quote: z.string(),
+  stats: z.array(statPair).default([])
+});
+
+const students = defineCollection({
   type: 'data',
   schema: z.object({
-    order: z.number(),
-    name: z.string(),
-    initial: z.string(),
-    image: z.string().nullable().optional(),
-    isReal: z.boolean().default(false),
-    disc: z.string(),
-    since: z.string(),
-    style: z.string(),
-    quote: z.string(),
-    stats: z.array(statPair).default([])
+    students: z.array(studentItem)
   })
 });
 
@@ -184,4 +195,4 @@ const trialPage = defineCollection({
   })
 });
 
-export const collections = { instructors, testimonials, settings, homePage, trainingPage, bookPage, trialPage, aboutPage, voicesPage, seminarsPage, seminars };
+export const collections = { teachers, students, settings, homePage, trainingPage, bookPage, trialPage, aboutPage, voicesPage, seminarsPage, seminars };
