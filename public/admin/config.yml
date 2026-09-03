@@ -291,9 +291,9 @@ collections:
     fields:
       - { label: "Reihenfolge", name: "order", widget: "number" }
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Termin (frei, z.B. „12. Oktober 2026" oder „Termin folgt")", name: "dateLabel", widget: "string" }
+      - { label: "Termin (frei, z.B. 12. Oktober 2026 oder Termin folgt)", name: "dateLabel", widget: "string" }
       - { label: "Ort", name: "location", widget: "string", required: false }
-      - { label: "Badge (z.B. „Nächster Termin", „Ausgebucht", „Vergangen")", name: "badge", widget: "string", required: false }
+      - { label: "Badge (z.B. Nächster Termin, Ausgebucht, Vergangen)", name: "badge", widget: "string", required: false }
       - { label: "Kurzbeschreibung (auf der Karte)", name: "summary", widget: "text" }
       - { label: "Volltext (im Detail-Fenster)", name: "body", widget: "text" }
       - { label: "Titelbild", name: "image", widget: "image", required: false }
