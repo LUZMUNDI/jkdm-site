@@ -1,12 +1,21 @@
 {
-  "order": 5,
-  "name": "Sebastian",
   "initial": "S",
-  "image": null,
   "isReal": false,
+  "name": "Sebastian",
+  "order": 9,
+  "style": "Ruhe",
   "disc": "Selbstverteidigung",
   "since": "seit 2023",
-  "style": "Ruhe",
+  "image": null,
   "quote": "Ich wollte eigentlich nur einmal reinschauen. Das war vor zwei Jahren — und ich stehe immer noch in der Reihe.",
-  "stats": [{"value":"2023","label":"Dabei seit"},{"value":"護身","label":"Selbstverteidigung"}]
+  "stats": [
+    {
+      "value": "2023",
+      "label": "Dabei seit"
+    },
+    {
+      "value": "護身",
+      "label": "Selbstverteidigung"
+    }
+  ]
 }
