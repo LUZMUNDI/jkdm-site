@@ -1,12 +1,12 @@
 {
-  "initial": "F",
+  "initial": "J",
   "isReal": false,
-  "name": "Felix",
+  "name": "Jin",
   "order": 3,
   "style": "Struktur",
   "disc": "Wing Chun",
   "since": "seit 2024",
-  "image": null,
+  "image": "/assets/uploads/jin.png",
   "quote": "Keine Show, keine Pokale an der Wand. Nur Technik, die funktioniert — und Leute, die wollen, dass du sie kannst.",
   "stats": [
     {
