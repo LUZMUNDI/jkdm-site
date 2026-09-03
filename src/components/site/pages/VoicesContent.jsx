@@ -7,9 +7,12 @@ import { StatPill } from "../../ds/core/StatPill.jsx";
 import { EmberField } from "../../ds/effects/EmberField.jsx";
 import { Section, PageHeader, CtaBand } from "../Shared.jsx";
 
-export default function VoicesContent({ voices, settings }) {
+export default function VoicesContent({ voices, settings, page }) {
   const [i, setI] = React.useState(0);
   const a = voices[i];
+  const p = page || {};
+  const disclosure = p.disclosureText !== undefined ? p.disclosureText : "Luciano & Michael sind echt — die übrigen acht sind Platzhalter, Fotos und Zitate folgen";
+  const price = settings?.probetrainingPrice || "20 €";
   React.useEffect(() => {
     const on = (e) => {
       if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); setI(v => (v + 1) % voices.length); }
@@ -21,8 +24,8 @@ export default function VoicesContent({ voices, settings }) {
 
   return (
     <div>
-      <PageHeader mode="Character Select" title="Stimmen" subhead="Zehn Schüler, zehn Wege in dieselbe Linie. Klick dich durch die Reihe.">
-        <Badge tone="ember">Luciano & Michael sind echt — die übrigen acht sind Platzhalter, Fotos und Zitate folgen</Badge>
+      <PageHeader mode={p.mode || "Character Select"} title={p.title || "Stimmen"} subhead={p.subhead || "Zehn Schüler, zehn Wege in dieselbe Linie. Klick dich durch die Reihe."}>
+        {disclosure && <Badge tone="ember">{disclosure}</Badge>}
       </PageHeader>
 
       <Section style={{ paddingTop: "var(--space-7)" }}>
@@ -72,7 +75,7 @@ export default function VoicesContent({ voices, settings }) {
         <div style={{ marginTop: "var(--space-4)", display: "flex", flexWrap: "wrap", alignItems: "center", gap: "var(--space-5)" }}>
           <p style={{ margin: 0, fontSize: "var(--text-xs)", color: "var(--ash-dim)", letterSpacing: "var(--ls-nav)",
             textTransform: "uppercase" }}>Klicken oder mit ← → durch die Reihe</p>
-          <Button href="/probetraining">Dein Platz in der Reihe — 20 €</Button>
+          <Button href="/probetraining">Dein Platz in der Reihe — {price}</Button>
         </div>
       </Section>
       <CtaBand settings={settings} />

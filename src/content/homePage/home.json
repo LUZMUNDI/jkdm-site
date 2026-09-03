@@ -35,7 +35,7 @@
       "label": "Stile"
     },
     {
-      "value": "ab 45 €",
+      "value": "{{monthlyPrice}}",
       "label": "Pro Monat"
     }
   ],
@@ -68,5 +68,5 @@
   "disciplinesLabel": "Was du studierst",
   "disciplinesTitle": "Fünf Stile. Eine Linie. Ein Studio.",
   "minuteBody": "Wir studieren in kleinen Gruppen — nicht, weil wir exklusiv klingen wollen, sondern weil dich sonst niemand sieht. Wir hören zusammen Musik, wir lachen, wir gehen zusammen an die Grenze. Und wir lernen zusammen. Das ist das Wichtigste.",
-  "heroPrimaryButton": "Probetraining sichern — 10 €"
+  "heroPrimaryButton": "Probetraining sichern — {{price}}"
 }

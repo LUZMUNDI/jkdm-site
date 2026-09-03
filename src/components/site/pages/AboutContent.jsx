@@ -5,18 +5,19 @@ import { Button } from "../../ds/core/Button.jsx";
 import { Wordmark } from "../../ds/core/Wordmark.jsx";
 import { Section, CtaBand, jkdmShell, ModeTag } from "../Shared.jsx";
 
-export default function AboutContent({ roster, settings }) {
+export default function AboutContent({ roster, settings, page }) {
   const [id, setId] = React.useState(roster[0]?.id);
   const active = roster.find(r => r.id === id) || roster[0];
+  const p = page || {};
   return (
     <div>
       <header style={{ padding: "var(--space-9) 0 var(--space-7)", borderBottom: "var(--hairline) solid var(--border-hairline)" }}>
         <div className="r-stack" style={{ ...jkdmShell, display: "grid", gridTemplateColumns: "1fr 1.05fr", gap: "var(--space-8)", alignItems: "end" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-4)" }}>
-            <ModeTag>Story Mode</ModeTag>
-            <Wordmark text="Über uns" size="xl" />
+            <ModeTag>{p.mode || "Story Mode"}</ModeTag>
+            <Wordmark text={p.title || "Über uns"} size="xl" />
             <p style={{ margin: 0, maxWidth: "44ch", fontSize: "var(--text-lead)", color: "var(--text-secondary)", textWrap: "pretty" }}>
-              Drei Lehrer, eine Linie. Klick dich durch — einer von ihnen wird dir bald sagen, dass deine Deckung unten ist.
+              {p.subhead || "Drei Lehrer, eine Linie. Klick dich durch — einer von ihnen wird dir bald sagen, dass deine Deckung unten ist."}
             </p>
           </div>
           <div>

@@ -34,7 +34,7 @@ const testimonials = defineCollection({
   })
 });
 
-// Site-wide settings used across pages (footer, CTA band, prices, address).
+// Site-wide settings used across pages (footer, CTA band, prices, address, nav labels).
 const settings = defineCollection({
   type: 'data',
   schema: z.object({
@@ -54,7 +54,59 @@ const settings = defineCollection({
     footerBlurbBold: z.string(),
     ctaBandHeadline: z.string(),
     ctaBandBody: z.string(),
-    ctaBandButton: z.string()
+    ctaBandButton: z.string(),
+    navHomeLabel: z.string().default('Main Menu'),
+    navAboutLabel: z.string().default('Story Mode'),
+    navTrainingLabel: z.string().default('Training Mode'),
+    navVoicesLabel: z.string().default('Roster'),
+    navBookLabel: z.string().default('Archive'),
+    navSeminarsLabel: z.string().default('Side Quests')
+  })
+});
+
+// In-page title/subhead text for pages whose nav label is edited separately above.
+const aboutPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    mode: z.string().default('Story Mode'),
+    title: z.string().default('\u00dcber uns'),
+    subhead: z.string().default('Drei Lehrer, eine Linie. Klick dich durch \u2014 einer von ihnen wird dir bald sagen, dass deine Deckung unten ist.')
+  })
+});
+
+const voicesPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    mode: z.string().default('Character Select'),
+    title: z.string().default('Stimmen'),
+    subhead: z.string().default('Zehn Sch\u00fcler, zehn Wege in dieselbe Linie. Klick dich durch die Reihe.'),
+    disclosureText: z.string().default('').optional()
+  })
+});
+
+const seminarsPage = defineCollection({
+  type: 'data',
+  schema: z.object({
+    mode: z.string().default('Side Quests'),
+    title: z.string().default('Seminare'),
+    subhead: z.string().default('Sondertrainings, Gastlehrer und Themenabende \u2014 abseits des regul\u00e4ren Stundenplans.')
+  })
+});
+
+const seminars = defineCollection({
+  type: 'data',
+  schema: z.object({
+    order: z.number(),
+    title: z.string(),
+    dateLabel: z.string(),
+    location: z.string().optional(),
+    badge: z.string().optional(),
+    summary: z.string(),
+    body: z.string(),
+    image: z.string().nullable().optional(),
+    gallery: z.array(z.string()).default([]),
+    ctaLabel: z.string().default('Jetzt anmelden'),
+    ctaHref: z.string().default('/probetraining')
   })
 });
 
@@ -132,4 +184,4 @@ const trialPage = defineCollection({
   })
 });
 
-export const collections = { instructors, testimonials, settings, homePage, trainingPage, bookPage, trialPage };
+export const collections = { instructors, testimonials, settings, homePage, trainingPage, bookPage, trialPage, aboutPage, voicesPage, seminarsPage, seminars };
