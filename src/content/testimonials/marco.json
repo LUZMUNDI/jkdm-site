@@ -1,12 +1,21 @@
 {
-  "order": 8,
-  "name": "Marco",
   "initial": "M",
-  "image": null,
   "isReal": false,
+  "name": "Martin",
+  "order": 8,
+  "style": "Druck",
   "disc": "Pencak Silat",
   "since": "seit 2018",
-  "style": "Druck",
+  "image": "/assets/uploads/martin.png",
   "quote": "Ich komme aus dem Fitnessstudio. Hier bin ich nach 90 Minuten platt — und kann etwas, das ich vorher nicht konnte.",
-  "stats": [{"value":"2018","label":"Dabei seit"},{"value":"Silat","label":"Schwerpunkt"}]
+  "stats": [
+    {
+      "value": "2018",
+      "label": "Dabei seit"
+    },
+    {
+      "value": "Silat",
+      "label": "Schwerpunkt"
+    }
+  ]
 }
