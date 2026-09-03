@@ -3,7 +3,8 @@ import React from "react";
 const seed=(i)=>{const r=Math.sin(i*97.13)*10000;return r-Math.floor(r);};
 
 export function EmberField({count=16,style}){
-  const id=React.useMemo(()=>"ember-"+Math.random().toString(36).slice(2,8),[]);
+  const rawId=React.useId();
+  const id="ember-"+rawId.replace(/[^a-zA-Z0-9-]/g,"");
   const parts=React.useMemo(()=>Array.from({length:count},(_,i)=>({
     left:(seed(i)*100).toFixed(2)+"%",
     size:(1.5+seed(i+41)*3).toFixed(2)+"px",
