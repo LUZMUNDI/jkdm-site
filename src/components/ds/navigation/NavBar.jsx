@@ -5,8 +5,8 @@ import { Button } from "../core/Button.jsx";
 
 export function NavBar({items=[],active,onNavigate,logoSrc,cta,onCta,sticky=true,
   brandFull="Jeet Kune Do München",brandShort="JKDM",brandBreakpoint=1024,style}){
-  const [wide,setWide]=React.useState(typeof window==="undefined"?true:window.innerWidth>=brandBreakpoint);
-  const [compact,setCompact]=React.useState(typeof window==="undefined"?false:window.innerWidth<760);
+  const [wide,setWide]=React.useState(true);
+  const [compact,setCompact]=React.useState(false);
   const [open,setOpen]=React.useState(false);
 
   React.useEffect(()=>{

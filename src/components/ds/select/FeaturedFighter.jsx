@@ -4,7 +4,7 @@ import { EmberField } from "../effects/EmberField.jsx";
 import { SectionLabel } from "../core/SectionLabel.jsx";
 
 export function FeaturedFighter({name,title,tagline,bio,stats=[],image,brush,label,children,style}){
-  const [narrow,setNarrow]=React.useState(typeof window==="undefined"?false:window.innerWidth<820);
+  const [narrow,setNarrow]=React.useState(false);
   React.useEffect(()=>{
     const on=()=>setNarrow(window.innerWidth<820);
     on();window.addEventListener("resize",on);

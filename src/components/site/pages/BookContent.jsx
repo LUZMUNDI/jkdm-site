@@ -59,8 +59,8 @@ export default function BookContent({ content, settings }) {
         </div>
       </Section>
 
-      {hasTransferDetails && (
-        <Section id="buch-bestellen">
+      <Section id="buch-bestellen">
+        {hasTransferDetails ? (
           <div className="r-stack" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "var(--space-6)" }}>
             <div>
               <SectionLabel>{c.transferTitle}</SectionLabel>
@@ -92,8 +92,25 @@ export default function BookContent({ content, settings }) {
               </div>
             </div>
           </div>
-        </Section>
-      )}
+        ) : (
+          <div style={{ background: "var(--surface-card)", border: "var(--hairline) solid var(--border-hairline)",
+            padding: "var(--space-6)", maxWidth: "56ch" }}>
+            <SectionLabel>{c.transferTitle || "Buch bestellen"}</SectionLabel>
+            <p style={{ margin: "var(--space-4) 0 0", color: "var(--text-secondary)", textWrap: "pretty" }}>
+              Die Online-Bestellung per Überweisung wird gerade eingerichtet. Bis dahin bekommst du das Buch direkt im Studio,
+              oder schreib uns kurz und wir kümmern uns darum.
+            </p>
+            <div style={{ marginTop: "var(--space-6)", display: "flex", flexWrap: "wrap", gap: "var(--space-4)" }}>
+              <Button variant="quiet" href="/training">Studio-Zeiten ansehen</Button>
+              {settings?.contactEmail && (
+                <Button href={`mailto:${settings.contactEmail}?subject=${encodeURIComponent("Buchbestellung")}`}>
+                  Per E-Mail bestellen
+                </Button>
+              )}
+            </div>
+          </div>
+        )}
+      </Section>
 
       <CtaBand settings={settings} />
     </div>
