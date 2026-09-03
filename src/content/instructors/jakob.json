@@ -1,25 +1,16 @@
 {
-  "bio": "Jakob kam 2021 als Schüler ins Studio — ohne Vorerfahrung, wie fast alle — und hat sich bis zum Selbstverteidigungstrainer hochstudiert. Genau deshalb weiß er noch ganz genau, wie sich der erste Abend anfühlt, und holt dich da ab, wo du wirklich stehst.",
-  "name": "Si-hing Jakob",
-  "tagline": "Stand 2021 selbst zum ersten Mal in dieser Tür.",
   "order": 3,
+  "name": "Si-hing Jakob",
+  "short": "Si-hing Jakob",
   "role": "Selbstverteidigung",
-  "title": "Jeet Kune Do · Vom Schüler zum Trainer",
+  "title": "Selbstverteidigung · Vom Schüler zum Trainer",
+  "tagline": "Stand 2021 selbst zum ersten Mal in dieser Tür.",
+  "bio": "Jakob kam 2021 als Schüler ins Studio — ohne Vorerfahrung, wie fast alle — und hat sich bis zum Selbstverteidigungstrainer hochstudiert. Genau deshalb weiß er noch ganz genau, wie sich der erste Abend anfühlt, und holt dich da ab, wo du wirklich stehst.",
   "brush": "護身",
   "image": "/assets/portrait-jakob.png",
-  "short": "Si-hing Jakob",
   "stats": [
-    {
-      "value": "2021",
-      "label": "Erster Abend"
-    },
-    {
-      "value": "Schüler → Trainer",
-      "label": "Weg"
-    },
-    {
-      "value": "護身",
-      "label": "Fokus"
-    }
+    {"value": "2021", "label": "Erster Abend"},
+    {"value": "Schüler → Trainer", "label": "Weg"},
+    {"value": "護身", "label": "Fokus"}
   ]
 }

@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import SiteHeader from '../components/site/SiteHeader.jsx';
 import { SiteFooter } from '../components/site/Shared.jsx';
-import { getSettings } from '../lib/content';
+import { getEntry } from 'astro:content';
 
 interface Props {
   active: string;
@@ -11,7 +11,8 @@ interface Props {
 }
 const { active, title, description = "JKDM — Jeet Kune Do München. Privates Studio, gegründet 2017 von Sifu Dominik Rettig." } = Astro.props;
 
-const settings = await getSettings();
+const settingsEntry = await getEntry('settings', 'global');
+const settings = settingsEntry?.data;
 ---
 <!doctype html>
 <html lang="de">
@@ -22,7 +23,7 @@ const settings = await getSettings();
     <title>{title} · JKDM — Jeet Kune Do München</title>
   </head>
   <body>
-    <SiteHeader client:load active={active} settings={settings} />
+    <SiteHeader client:load active={active} />
     <main>
       <slot />
     </main>

@@ -2,50 +2,39 @@ import { defineCollection, z } from 'astro:content';
 
 const statPair = z.object({ value: z.string(), label: z.string() });
 
-// Instructors and testimonials each live in ONE json file as a drag-reorderable
-// list in the CMS (Decap's list widget supports native drag-and-drop + add/remove),
-// instead of one file per person. Array order = display order, no manual number needed.
-const teacherItem = z.object({
-  slug: z.string(),
-  name: z.string(),
-  short: z.string(),
-  role: z.string(),
-  title: z.string(),
-  tagline: z.string(),
-  bio: z.string(),
-  brush: z.string(),
-  image: z.string(),
-  stats: z.array(statPair).default([])
-});
-
-const teachers = defineCollection({
+const instructors = defineCollection({
   type: 'data',
   schema: z.object({
-    teachers: z.array(teacherItem)
+    order: z.number(),
+    name: z.string(),
+    short: z.string(),
+    role: z.string(),
+    title: z.string(),
+    tagline: z.string(),
+    bio: z.string(),
+    brush: z.string(),
+    image: z.string(),
+    stats: z.array(statPair)
   })
 });
 
-const studentItem = z.object({
-  slug: z.string(),
-  name: z.string(),
-  initial: z.string(),
-  image: z.string().nullable().optional(),
-  isReal: z.boolean().default(false),
-  disc: z.string(),
-  since: z.string(),
-  style: z.string(),
-  quote: z.string(),
-  stats: z.array(statPair).default([])
-});
-
-const students = defineCollection({
+const testimonials = defineCollection({
   type: 'data',
   schema: z.object({
-    students: z.array(studentItem)
+    order: z.number(),
+    name: z.string(),
+    initial: z.string(),
+    image: z.string().nullable().optional(),
+    isReal: z.boolean().default(false),
+    disc: z.string(),
+    since: z.string(),
+    style: z.string(),
+    quote: z.string(),
+    stats: z.array(statPair)
   })
 });
 
-// Site-wide settings used across pages (footer, CTA band, prices, address, nav labels).
+// Site-wide settings used across pages (footer, CTA band, prices, address).
 const settings = defineCollection({
   type: 'data',
   schema: z.object({
@@ -65,59 +54,7 @@ const settings = defineCollection({
     footerBlurbBold: z.string(),
     ctaBandHeadline: z.string(),
     ctaBandBody: z.string(),
-    ctaBandButton: z.string(),
-    navHomeLabel: z.string().default('Main Menu'),
-    navAboutLabel: z.string().default('Story Mode'),
-    navTrainingLabel: z.string().default('Training Mode'),
-    navVoicesLabel: z.string().default('Roster'),
-    navBookLabel: z.string().default('Archive'),
-    navSeminarsLabel: z.string().default('Side Quests')
-  })
-});
-
-// In-page title/subhead text for pages whose nav label is edited separately above.
-const aboutPage = defineCollection({
-  type: 'data',
-  schema: z.object({
-    mode: z.string().default('Story Mode'),
-    title: z.string().default('\u00dcber uns'),
-    subhead: z.string().default('Drei Lehrer, eine Linie. Klick dich durch \u2014 einer von ihnen wird dir bald sagen, dass deine Deckung unten ist.')
-  })
-});
-
-const voicesPage = defineCollection({
-  type: 'data',
-  schema: z.object({
-    mode: z.string().default('Character Select'),
-    title: z.string().default('Stimmen'),
-    subhead: z.string().default('Zehn Sch\u00fcler, zehn Wege in dieselbe Linie. Klick dich durch die Reihe.'),
-    disclosureText: z.string().default('').optional()
-  })
-});
-
-const seminarsPage = defineCollection({
-  type: 'data',
-  schema: z.object({
-    mode: z.string().default('Side Quests'),
-    title: z.string().default('Seminare'),
-    subhead: z.string().default('Sondertrainings, Gastlehrer und Themenabende \u2014 abseits des regul\u00e4ren Stundenplans.')
-  })
-});
-
-const seminars = defineCollection({
-  type: 'data',
-  schema: z.object({
-    order: z.number(),
-    title: z.string(),
-    dateLabel: z.string(),
-    location: z.string().optional(),
-    badge: z.string().optional(),
-    summary: z.string(),
-    body: z.string(),
-    image: z.string().nullable().optional(),
-    gallery: z.array(z.string()).default([]),
-    ctaLabel: z.string().default('Jetzt anmelden'),
-    ctaHref: z.string().default('/probetraining')
+    ctaBandButton: z.string()
   })
 });
 
@@ -195,4 +132,4 @@ const trialPage = defineCollection({
   })
 });
 
-export const collections = { teachers, students, settings, homePage, trainingPage, bookPage, trialPage, aboutPage, voicesPage, seminarsPage, seminars };
+export const collections = { instructors, testimonials, settings, homePage, trainingPage, bookPage, trialPage };

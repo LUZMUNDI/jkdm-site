@@ -2,54 +2,14 @@
   "headline": "Training",
   "subhead": "Vier Wege durch dasselbe Studio. Alle führen in dieselbe Linie — such dir deinen aus.",
   "formats": [
-    {
-      "title": "Gruppentraining",
-      "body": "Zwei Abende pro Woche, kleine Gruppe, jeder kommt dran. Du studierst Jeet Kune Do, Wing Chun, Pencak Silat und Selbstverteidigung im Wechsel — mit Partnern, die morgen wieder da sind und genau wissen, wo du letzte Woche stehen geblieben bist.",
-      "stats": [
-        {
-          "value": "2×",
-          "label": "Pro Woche"
-        },
-        {
-          "value": "{{monthlyPrice}}",
-          "label": "Im Monat"
-        },
-        {
-          "value": "Mi 19:00",
-          "label": "& So 18:00"
-        }
-      ]
-    },
-    {
-      "title": "Einzeltraining",
-      "body": "Eine Stunde, zwei Leute, volle Aufmerksamkeit. Wir nehmen genau das auseinander, was bei dir nicht sitzt — und bauen es neu auf, bis es unter Druck hält.",
-      "stats": [
-        {
-          "value": "1:1",
-          "label": "Preis auf Anfrage"
-        }
-      ]
-    },
-    {
-      "title": "Seminare",
-      "body": "Ein Thema, ein Tag, volle Tiefe. Waffen, Nervendruckpunkte, Bodenlage — Themen, für die im Gruppentraining nie genug Zeit ist. Schüler aus anderen Studios sitzen mit auf der Matte.",
-      "stats": [
-        {
-          "value": "1 Tag",
-          "label": "Termine folgen"
-        }
-      ]
-    },
-    {
-      "title": "ADHS- & Teen-Training",
-      "body": "Für Kinder und Jugendliche, die Energie im Überfluss haben und nichts damit anfangen können. Bei Si-Je Kathi wird daraus Technik, Timing und Haltung — und die Erfahrung, zu einer Gruppe zu gehören, die auf einen zählt.",
-      "stats": [
-        {
-          "value": "Si-Je Kathi",
-          "label": "Leitung"
-        }
-      ]
-    }
+    {"title": "Gruppentraining", "body": "Zwei Abende pro Woche, kleine Gruppe, jeder kommt dran. Du studierst Jeet Kune Do, Wing Chun, Pencak Silat und Selbstverteidigung im Wechsel — mit Partnern, die morgen wieder da sind und genau wissen, wo du letzte Woche stehen geblieben bist.",
+     "stats": [{"value": "2×", "label": "Pro Woche"}, {"value": "ab 45 €", "label": "Im Monat"}, {"value": "Mi 19:00", "label": "& So 18:00"}]},
+    {"title": "Einzeltraining", "body": "Eine Stunde, zwei Leute, volle Aufmerksamkeit. Wir nehmen genau das auseinander, was bei dir nicht sitzt — und bauen es neu auf, bis es unter Druck hält.",
+     "stats": [{"value": "1:1", "label": "Preis auf Anfrage"}]},
+    {"title": "Seminare", "body": "Ein Thema, ein Tag, volle Tiefe. Waffen, Nervendruckpunkte, Bodenlage — Themen, für die im Gruppentraining nie genug Zeit ist. Schüler aus anderen Studios sitzen mit auf der Matte.",
+     "stats": [{"value": "1 Tag", "label": "Termine folgen"}]},
+    {"title": "ADHS- & Teen-Training", "body": "Für Kinder und Jugendliche, die Energie im Überfluss haben und nichts damit anfangen können. Bei Si-Je Kathi wird daraus Technik, Timing und Haltung — und die Erfahrung, zu einer Gruppe zu gehören, die auf einen zählt.",
+     "stats": [{"value": "Si-Je Kathi", "label": "Leitung"}]}
   ],
   "locationLine": "Redlingerstr. 7, 81735 München · U5 Michaelibad. Vor Ort ist alles ausgeschildert — du findest uns.",
   "ctaButton": "Termin sichern",
@@ -61,5 +21,5 @@
   "section2Label": "So sieht das aus",
   "section2Title": "Eine Technik. Hundert Wiederholungen. Dein Reflex.",
   "section2Body": "So sieht es aus, wenn ein Schüler eine Bewegung zum ersten Mal wirklich trifft. In Zeitlupe kannst du zusehen; auf der Matte hast du dafür einen Bruchteil einer Sekunde. Genau das studieren wir zusammen — Abend für Abend, bis es von allein passiert.",
-  "section2Button": "Selbst ausprobieren — {{price}}"
+  "section2Button": "Selbst ausprobieren — 20 €"
 }

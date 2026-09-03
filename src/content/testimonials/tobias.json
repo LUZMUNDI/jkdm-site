@@ -1,21 +1,12 @@
 {
-  "initial": "T",
-  "isReal": false,
+  "order": 3,
   "name": "Tobias",
-  "order": 10,
-  "style": "Reflex",
+  "initial": "T",
+  "image": null,
+  "isReal": false,
   "disc": "Jeet Kune Do",
   "since": "seit 2019",
-  "image": null,
+  "style": "Reflex",
   "quote": "Nach drei Monaten habe ich zum ersten Mal gemerkt, dass mein Körper schneller reagiert als mein Kopf. Ziemlich verrückt.",
-  "stats": [
-    {
-      "value": "2019",
-      "label": "Dabei seit"
-    },
-    {
-      "value": "截拳道",
-      "label": "Jeet Kune Do"
-    }
-  ]
+  "stats": [{"value":"2019","label":"Dabei seit"},{"value":"截拳道","label":"Jeet Kune Do"}]
 }

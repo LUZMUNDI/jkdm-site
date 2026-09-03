@@ -1,14 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import VoicesContent from '../components/site/pages/VoicesContent.jsx';
-import { getEntry } from 'astro:content';
-import { getSettings, getPageContent } from '../lib/content';
+import { getCollection, getEntry } from 'astro:content';
 
-const voices = ((await getEntry('students', 'students'))?.data.students || [])
-  .map(s => ({ id: s.slug, ...s }));
-const settings = await getSettings();
-const page = await getPageContent('voicesPage', 'voices', settings);
+const testimonials = (await getCollection('testimonials'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map(t => ({ id: t.id, ...t.data }));
+const settings = (await getEntry('settings', 'global'))?.data;
 ---
-<Layout active="voices" title={page?.title || 'Stimmen'}>
-  <VoicesContent client:load voices={voices} settings={settings} page={page} />
+<Layout active="voices" title="Stimmen">
+  <VoicesContent client:load voices={testimonials} settings={settings} />
 </Layout>

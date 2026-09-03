@@ -1,25 +1,12 @@
 {
-  "initial": "L",
-  "isReal": true,
+  "order": 1,
   "name": "Luciano",
-  "order": 6,
-  "style": "Orangegurt",
+  "initial": "L",
+  "image": "/assets/student-luciano.png",
+  "isReal": true,
   "disc": "Jeet Kune Do · Pencak Silat",
   "since": "seit 2025",
-  "image": "/assets/student-luciano.png",
+  "style": "Orangegurt",
   "quote": "Ich studiere jetzt fast ein Jahr hier und will einfach mal sagen, wie glücklich mich das macht. Danke an meinen Lehrer und an meine Trainingspartner. Ich habe so viel gelernt — die praktischen Techniken, die Atemarbeit, die Philosophie, das Zusammenkommen. Es hat mein Leben verändert: angefangen habe ich mit Weissgurt, heute trage ich Orange.",
-  "stats": [
-    {
-      "value": "2025",
-      "label": "Dabei seit"
-    },
-    {
-      "value": "Orange",
-      "label": "Gurt"
-    },
-    {
-      "value": "截拳道",
-      "label": "Jeet Kune Do"
-    }
-  ]
+  "stats": [{"value":"2025","label":"Dabei seit"},{"value":"Orange","label":"Gurt"},{"value":"截拳道","label":"Jeet Kune Do"}]
 }
