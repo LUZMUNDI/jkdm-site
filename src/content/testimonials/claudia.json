@@ -1,12 +1,21 @@
 {
-  "order": 7,
-  "name": "Claudia",
   "initial": "C",
-  "image": null,
   "isReal": false,
+  "name": "Claudia",
+  "order": 9,
+  "style": "Geduld",
   "disc": "Eltern · Kindertraining",
   "since": "seit 2022",
-  "style": "Geduld",
+  "image": null,
   "quote": "Mein Sohn geht freiwillig hin. Freiwillig. Fragt sonst nie nach Sport.",
-  "stats": [{"value":"2022","label":"Dabei seit"},{"value":"Teens","label":"Gruppe"}]
+  "stats": [
+    {
+      "value": "2022",
+      "label": "Dabei seit"
+    },
+    {
+      "value": "Teens",
+      "label": "Gruppe"
+    }
+  ]
 }
