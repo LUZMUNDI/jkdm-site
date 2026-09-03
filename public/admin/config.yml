@@ -16,8 +16,8 @@ collections:
   - name: "instructors"
     label: "Über uns — Lehrer"
     folder: "src/content/instructors"
-    create: false
-    delete: false
+    create: true
+    delete: true
     extension: "json"
     format: "json"
     identifier_field: "name"
@@ -66,12 +66,12 @@ collections:
     label: "Seiten-Texte & Einstellungen"
     files:
       - file: "src/content/settings/global.json"
-        label: "Globale Einstellungen (Preise, Adresse, Footer)"
+        label: "Globale Einstellungen (Preise, Adresse, Footer, Navigation)"
         name: "global"
         fields:
-          - { label: "Preis Probetraining", name: "probetrainingPrice", widget: "string" }
-          - { label: "Preis Monatsbeitrag (ab)", name: "monthlyPriceFrom", widget: "string" }
-          - { label: "Preis Buch", name: "bookPrice", widget: "string" }
+          - { label: "Preis Probetraining", name: "probetrainingPrice", widget: "string", hint: "Wird überall automatisch eingesetzt, wo {{price}} im Text steht." }
+          - { label: "Preis Monatsbeitrag (ab)", name: "monthlyPriceFrom", widget: "string", hint: "Wird überall automatisch eingesetzt, wo {{monthlyPrice}} im Text steht." }
+          - { label: "Preis Buch", name: "bookPrice", widget: "string", hint: "Wird überall automatisch eingesetzt, wo {{bookPrice}} im Text steht." }
           - { label: "Verkaufte Exemplare (Buch)", name: "bookCopiesSold", widget: "string" }
           - { label: "Trainingszeiten", name: "scheduleLine", widget: "string" }
           - { label: "Adresse — Straße", name: "addressStreet", widget: "string" }
@@ -84,8 +84,39 @@ collections:
           - { label: "Footer — Studio-Blurb", name: "footerBlurb", widget: "text" }
           - { label: "Footer — Blurb (fett)", name: "footerBlurbBold", widget: "string" }
           - { label: "CTA-Band — Überschrift", name: "ctaBandHeadline", widget: "string" }
-          - { label: "CTA-Band — Text", name: "ctaBandBody", widget: "text" }
+          - { label: "CTA-Band — Text", name: "ctaBandBody", widget: "text", hint: "Tipp: {{price}} wird automatisch durch den Probetraining-Preis ersetzt." }
           - { label: "CTA-Band — Button", name: "ctaBandButton", widget: "string" }
+          - { label: "Menüpunkt — Start", name: "navHomeLabel", widget: "string", hint: "Text in der Navigation oben (nicht der Seitentitel)." }
+          - { label: "Menüpunkt — Über uns", name: "navAboutLabel", widget: "string" }
+          - { label: "Menüpunkt — Training", name: "navTrainingLabel", widget: "string" }
+          - { label: "Menüpunkt — Stimmen", name: "navVoicesLabel", widget: "string" }
+          - { label: "Menüpunkt — Seminare", name: "navSeminarsLabel", widget: "string" }
+          - { label: "Menüpunkt — Buch", name: "navBookLabel", widget: "string" }
+
+      - file: "src/content/aboutPage/about.json"
+        label: "Seiten-Titel — Über uns"
+        name: "aboutPage"
+        fields:
+          - { label: "Mode-Tag (kleines Badge über der Überschrift)", name: "mode", widget: "string" }
+          - { label: "Seiten-Überschrift", name: "title", widget: "string" }
+          - { label: "Untertext", name: "subhead", widget: "text" }
+
+      - file: "src/content/voicesPage/voices.json"
+        label: "Seiten-Titel — Stimmen"
+        name: "voicesPage"
+        fields:
+          - { label: "Mode-Tag (kleines Badge über der Überschrift)", name: "mode", widget: "string" }
+          - { label: "Seiten-Überschrift", name: "title", widget: "string" }
+          - { label: "Untertext", name: "subhead", widget: "text" }
+          - { label: "Hinweis-Badge (rot, oben auf der Seite)", name: "disclosureText", widget: "text", required: false, hint: "Leer lassen, um den Hinweis komplett auszublenden." }
+
+      - file: "src/content/seminarsPage/seminars.json"
+        label: "Seiten-Titel — Seminare"
+        name: "seminarsPage"
+        fields:
+          - { label: "Mode-Tag (kleines Badge über der Überschrift)", name: "mode", widget: "string" }
+          - { label: "Seiten-Überschrift", name: "title", widget: "string" }
+          - { label: "Untertext", name: "subhead", widget: "text" }
 
       - file: "src/content/homePage/home.json"
         label: "Home"
@@ -193,3 +224,24 @@ collections:
           - { label: "Absenden-Button", name: "submitButton", widget: "string" }
           - { label: "Bestätigung — Überschrift", name: "confirmHeadline", widget: "string" }
           - { label: "Bestätigung — Text", name: "confirmBody", widget: "text" }
+
+  - name: "seminars"
+    label: "Seminare"
+    folder: "src/content/seminars"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    fields:
+      - { label: "Reihenfolge", name: "order", widget: "number" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Termin (frei, z.B. „12. Oktober 2026“ oder „Termin folgt“)", name: "dateLabel", widget: "string" }
+      - { label: "Ort", name: "location", widget: "string", required: false }
+      - { label: "Badge (z.B. „Nächster Termin“, „Ausgebucht“, „Vergangen“)", name: "badge", widget: "string", required: false }
+      - { label: "Kurzbeschreibung (auf der Karte)", name: "summary", widget: "text" }
+      - { label: "Volltext (im Detail-Fenster)", name: "body", widget: "text" }
+      - { label: "Titelbild", name: "image", widget: "image", required: false }
+      - { label: "Weitere Fotos", name: "gallery", widget: "list", field: { label: "Foto", name: "src", widget: "image" }, required: false }
+      - { label: "Button-Text", name: "ctaLabel", widget: "string", default: "Jetzt anmelden" }
+      - { label: "Button-Link", name: "ctaHref", widget: "string", default: "/probetraining" }
