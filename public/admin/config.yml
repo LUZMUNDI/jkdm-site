@@ -15,52 +15,59 @@ public_folder: "/assets/uploads"
 collections:
   - name: "instructors"
     label: "Über uns — Lehrer"
-    folder: "src/content/instructors"
-    create: true
-    delete: true
-    extension: "json"
-    format: "json"
-    identifier_field: "name"
-    fields:
-      - { label: "Reihenfolge", name: "order", widget: "number" }
-      - { label: "Name (Anzeige)", name: "name", widget: "string" }
-      - { label: "Kurzname (Roster)", name: "short", widget: "string" }
-      - { label: "Rolle (Roster-Karte)", name: "role", widget: "string" }
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Tagline", name: "tagline", widget: "string" }
-      - { label: "Bio", name: "bio", widget: "text" }
-      - { label: "Pinsel-Zeichen (chinesisch)", name: "brush", widget: "string" }
-      - { label: "Foto", name: "image", widget: "image" }
-      - label: "Statistiken"
-        name: "stats"
-        widget: "list"
+    files:
+      - file: "src/content/teachers/teachers.json"
+        label: "Lehrer-Liste"
+        name: "teachers"
         fields:
-          - { label: "Wert", name: "value", widget: "string" }
-          - { label: "Beschriftung", name: "label", widget: "string" }
+          - label: "Lehrer (zum Umsortieren am ⋮⋮-Griff ziehen)"
+            name: "teachers"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Interner Kurzcode (keine Leerzeichen, z.B. dominik)", name: "slug", widget: "string", hint: "Nur intern, wird nicht angezeigt." }
+              - { label: "Name (Anzeige)", name: "name", widget: "string" }
+              - { label: "Kurzname (Roster)", name: "short", widget: "string" }
+              - { label: "Rolle (Roster-Karte)", name: "role", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Bio", name: "bio", widget: "text" }
+              - { label: "Pinsel-Zeichen (chinesisch)", name: "brush", widget: "string" }
+              - { label: "Foto", name: "image", widget: "image" }
+              - label: "Statistiken"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Wert", name: "value", widget: "string" }
+                  - { label: "Beschriftung", name: "label", widget: "string" }
 
   - name: "testimonials"
     label: "Stimmen — Schüler"
-    folder: "src/content/testimonials"
-    create: true
-    extension: "json"
-    format: "json"
-    identifier_field: "name"
-    fields:
-      - { label: "Reihenfolge", name: "order", widget: "number" }
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Initiale (falls kein Foto)", name: "initial", widget: "string" }
-      - { label: "Foto", name: "image", widget: "image", required: false }
-      - { label: "Echtes Zitat? (sonst Platzhalter)", name: "isReal", widget: "boolean", default: false }
-      - { label: "Disziplin(en)", name: "disc", widget: "string" }
-      - { label: "Dabei seit", name: "since", widget: "string" }
-      - { label: "Stil-Stichwort", name: "style", widget: "string" }
-      - { label: "Zitat", name: "quote", widget: "text" }
-      - label: "Statistiken"
-        name: "stats"
-        widget: "list"
+    files:
+      - file: "src/content/students/students.json"
+        label: "Schüler-Liste"
+        name: "students"
         fields:
-          - { label: "Wert", name: "value", widget: "string" }
-          - { label: "Beschriftung", name: "label", widget: "string" }
+          - label: "Schüler (zum Umsortieren am ⋮⋮-Griff ziehen)"
+            name: "students"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Interner Kurzcode (keine Leerzeichen)", name: "slug", widget: "string", hint: "Nur intern, wird nicht angezeigt." }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Initiale (falls kein Foto)", name: "initial", widget: "string" }
+              - { label: "Foto", name: "image", widget: "image", required: false }
+              - { label: "Echtes Zitat? (sonst Platzhalter)", name: "isReal", widget: "boolean", default: false }
+              - { label: "Disziplin(en)", name: "disc", widget: "string" }
+              - { label: "Dabei seit", name: "since", widget: "string" }
+              - { label: "Stil-Stichwort", name: "style", widget: "string" }
+              - { label: "Zitat", name: "quote", widget: "text" }
+              - label: "Statistiken"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Wert", name: "value", widget: "string" }
+                  - { label: "Beschriftung", name: "label", widget: "string" }
 
   - name: "pages"
     label: "Seiten-Texte & Einstellungen"
