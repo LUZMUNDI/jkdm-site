@@ -10,7 +10,7 @@ export function NavBar({items=[],active,onNavigate,logoSrc,cta,onCta,sticky=true
   const [open,setOpen]=React.useState(false);
 
   React.useEffect(()=>{
-    const on=()=>{setWide(window.innerWidth>=brandBreakpoint);setCompact(window.innerWidth<760);};
+    const on=()=>{setWide(window.innerWidth>=brandBreakpoint);setCompact(window.innerWidth<brandBreakpoint);};
     on();window.addEventListener("resize",on);
     return ()=>window.removeEventListener("resize",on);
   },[brandBreakpoint]);
