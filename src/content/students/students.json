@@ -189,14 +189,14 @@
       ]
     },
     {
-      "initial": "T",
+      "initial": "B",
       "isReal": false,
-      "name": "Tobias",
-      "slug": "tobias",
+      "name": "Beast",
+      "slug": "Beast",
       "style": "Reflex",
       "disc": "Jeet Kune Do",
       "since": "seit 2019",
-      "image": null,
+      "image": "/assets/uploads/final-boss.png",
       "quote": "Nach drei Monaten habe ich zum ersten Mal gemerkt, dass mein Körper schneller reagiert als mein Kopf. Ziemlich verrückt.",
       "stats": [
         {
