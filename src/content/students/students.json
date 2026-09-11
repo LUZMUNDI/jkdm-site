@@ -198,6 +198,17 @@
       "since": "2020",
       "image": "/assets/uploads/tekken-olvide-su-nombre.png",
       "quote": "I break bones"
+    },
+    {
+      "initial": "P",
+      "isReal": false,
+      "name": "Panterror",
+      "slug": "Test",
+      "style": "Attack!",
+      "disc": "Wild techniques",
+      "since": "Forever",
+      "image": "/assets/uploads/pantera.png",
+      "quote": "Won't escape me"
     }
   ]
 }
