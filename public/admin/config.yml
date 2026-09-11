@@ -240,6 +240,7 @@ collections:
         fields:
           - { label: "Überschrift", name: "headline", widget: "string" }
           - { label: "Subhead", name: "subhead", widget: "text" }
+          - { label: "Buch-Cover (Bild)", name: "coverImage", widget: "image" }
           - { label: "Bildunterschrift (Cover)", name: "coverCaption", widget: "string" }
           - { label: "Buchtitel", name: "title", widget: "string" }
           - { label: "Beschreibungstext", name: "body", widget: "text" }

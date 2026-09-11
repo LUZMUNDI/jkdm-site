@@ -173,6 +173,7 @@ const bookPage = defineCollection({
     headline: z.string(),
     subhead: z.string(),
     coverCaption: z.string(),
+    coverImage: z.string().default('/assets/book-cover.jpg'),
     title: z.string(),
     body: z.string(),
     statCards: z.array(z.object({ value: z.string(), label: z.string(), note: z.string() })),

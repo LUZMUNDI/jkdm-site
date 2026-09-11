@@ -33,7 +33,7 @@ export default function BookContent({ content, settings }) {
         <div className="r-stack" style={{ display: "grid", gridTemplateColumns: "minmax(280px,380px) 1fr", gap: "var(--space-8)", alignItems: "center" }}>
           <div style={{ position: "relative", border: "var(--hairline) solid var(--border-hairline)",
             boxShadow: "var(--shadow-panel)" }}>
-            <img src="/assets/book-cover.jpg" alt={c.title}
+            <img src={c.coverImage || "/assets/book-cover.jpg"} alt={c.title}
               style={{ width: "100%", height: "auto" }} />
           </div>
           <div>

@@ -26,5 +26,6 @@
   "primaryButton": "Buch holen — {{bookPrice}}",
   "transferButtonLabel": "Zahlungsbeleg senden",
   "title": "Der Weg der abfangenden Faust",
-  "transferNote": "Du bekommst das PDF in der Regel innerhalb von 24–48 Stunden (Werktags), nachdem die Zahlung eingegangen ist."
+  "transferNote": "Du bekommst das PDF in der Regel innerhalb von 24–48 Stunden (Werktags), nachdem die Zahlung eingegangen ist.",
+  "coverImage": "/assets/book-cover.jpg"
 }
