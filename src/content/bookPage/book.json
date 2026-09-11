@@ -1,9 +1,11 @@
 {
-  "headline": "Das Buch",
   "subhead": "15.000 Leser haben es vor dir aufgeschlagen. Lesen ersetzt kein Training — aber es erklärt, wie in diesem Studio gedacht wird.",
-  "coverCaption": "Von Sifu Dominik Rettig · 3. Auflage",
-  "title": "Der Weg der abfangenden Faust",
+  "transferIntro": "Kein Online-Shop, kein Stress: überweise den Buchpreis, schick den Beleg, und du bekommst das PDF direkt von Sifu Dominik.",
   "body": "Sifu Dominik hat aufgeschrieben, was Jeet Kune Do wirklich ausmacht: Prinzipien statt Rezepte, Anpassung statt Stilgläubigkeit. 15.000 verkaufte Exemplare sind kein Zufall — und keine Abkürzung: Papier hat noch niemanden verteidigt.",
+  "secondaryButton": "Oder komm vorbei und lass es dir vormachen.",
+  "transferReferenceHint": "Als Verwendungszweck bitte deinen vollen Namen angeben.",
+  "transferTitle": "Per Überweisung bestellen",
+  "transferAccountHolder": "DOMINIK RETTIG",
   "statCards": [
     {
       "value": "15.000",
@@ -16,15 +18,13 @@
       "note": "Weniger als ein Abend auf der Matte."
     }
   ],
-  "primaryButton": "Buch holen — {{bookPrice}}",
-  "secondaryButton": "Oder komm vorbei und lass es dir vormachen.",
+  "coverCaption": "Von Sifu Dominik Rettig · 3. Auflage",
   "badgeText": "Selbstverteidigung · Jeet Kune Do",
-  "transferTitle": "Per Überweisung bestellen",
-  "transferIntro": "Kein Online-Shop, kein Stress: überweise den Buchpreis, schick den Beleg, und du bekommst das PDF direkt von Sifu Dominik.",
-  "transferAccountHolder": "",
-  "transferIban": "",
   "transferBic": "",
-  "transferReferenceHint": "Als Verwendungszweck bitte deinen vollen Namen angeben.",
-  "transferNote": "Du bekommst das PDF in der Regel innerhalb von 24–48 Stunden, nachdem die Zahlung eingegangen ist.",
-  "transferButtonLabel": "Zahlungsbeleg senden"
+  "transferIban": "DE87 1001 1001 2744 7596 21",
+  "headline": "Das Buch",
+  "primaryButton": "Buch holen — {{bookPrice}}",
+  "transferButtonLabel": "Zahlungsbeleg senden",
+  "title": "Der Weg der abfangenden Faust",
+  "transferNote": "Du bekommst das PDF in der Regel innerhalb von 24–48 Stunden (Werktags), nachdem die Zahlung eingegangen ist."
 }
