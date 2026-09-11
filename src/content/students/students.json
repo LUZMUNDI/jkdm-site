@@ -168,14 +168,14 @@
       ]
     },
     {
-      "initial": "J",
+      "initial": "A",
       "isReal": false,
-      "name": "Jin",
-      "slug": "Jin",
+      "name": "Adam",
+      "slug": "Adam",
       "style": "Struktur",
       "disc": "Wing Chun",
       "since": "seit 2024",
-      "image": "/assets/uploads/jin.png",
+      "image": "/assets/uploads/tekken-sam.png",
       "quote": "Keine Show, keine Pokale an der Wand. Nur Technik, die funktioniert — und Leute, die wollen, dass du sie kannst.",
       "stats": [
         {
@@ -187,6 +187,17 @@
           "label": "Wing Chun"
         }
       ]
+    },
+    {
+      "initial": "C",
+      "isReal": true,
+      "name": "Curry",
+      "slug": "Curry",
+      "style": "Struktur",
+      "disc": "Selbsverteidigung",
+      "since": "2020",
+      "image": "/assets/uploads/tekken-olvide-su-nombre.png",
+      "quote": "I break bones"
     }
   ]
 }
