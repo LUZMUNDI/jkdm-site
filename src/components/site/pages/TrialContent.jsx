@@ -10,22 +10,61 @@ import { StatPill } from "../../ds/core/StatPill.jsx";
 import { EmberField } from "../../ds/effects/EmberField.jsx";
 import { Section, PageHeader } from "../Shared.jsx";
 
+const WEB3FORMS_ACCESS_KEY = "601af637-89d6-4e84-9ec5-51f0f18bda21";
+const TERMIN_OPTIONS = ["Mittwoch 19:00", "Sonntag 18:00"];
+
 export default function TrialContent({ content }) {
   const c = content;
   const [why, setWhy] = React.useState([0]);
   const [bring, setBring] = React.useState([]);
+  const [name, setName] = React.useState("");
+  const [mail, setMail] = React.useState("");
+  const [tel, setTel] = React.useState("");
+  const [termin, setTermin] = React.useState(TERMIN_OPTIONS[0]);
+  const [message, setMessage] = React.useState("");
   const [consent, setConsent] = React.useState(false);
   const [news, setNews] = React.useState(false);
+  const [sending, setSending] = React.useState(false);
   const [sent, setSent] = React.useState(false);
   const [err, setErr] = React.useState(false);
+  const [submitError, setSubmitError] = React.useState("");
   const toggle = (set, i) => set(s => s.includes(i) ? s.filter(x => x !== i) : [...s, i]);
 
-  // TODO: wire this to a real submission endpoint (e.g. a Cloudflare Pages Function
-  // or a form service like Formspree/Web3Forms) before going live. For now this
-  // only confirms locally, same as the design mockup.
-  const submit = () => {
+  const submit = async () => {
     if (!consent) { setErr(true); return; }
-    setSent(true);
+    if (!name || !mail) { setErr(true); return; }
+    setErr(false);
+    setSubmitError("");
+    setSending(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: "Neue Probetraining-Anmeldung — JKDM",
+          from_name: name,
+          name,
+          email: mail,
+          telefon: tel || "-",
+          wunschtermin: termin,
+          nachricht: message || "-",
+          warum: why.map(i => c.whyOptions[i]).join(", ") || "-",
+          mitbringen: bring.map(i => c.bringOptions[i]).join(", ") || "-",
+          newsletter: news ? "Ja" : "Nein"
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSent(true);
+      } else {
+        setSubmitError("Senden hat nicht geklappt. Bitte versuch's nochmal oder schreib uns direkt.");
+      }
+    } catch (e) {
+      setSubmitError("Senden hat nicht geklappt. Bitte versuch's nochmal oder schreib uns direkt.");
+    } finally {
+      setSending(false);
+    }
   };
 
   if (sent) return (
@@ -75,11 +114,11 @@ export default function TrialContent({ content }) {
           <div style={{ background: "var(--surface-card)", border: "var(--hairline) solid var(--border-hairline)",
             padding: "var(--space-6)", display: "flex", flexDirection: "column", gap: "var(--space-5)" }}>
             <SectionLabel>Kurz vorab</SectionLabel>
-            <Input label="Name" name="name" required placeholder="Wie sollen wir dich rufen?" />
-            <Input label="E-Mail" name="mail" type="email" required placeholder="Wohin schicken wir die Bestätigung?" />
-            <Input label="Telefon (optional)" name="tel" placeholder="Nur falls kurzfristig etwas ausfällt" />
-            <Select label="Wunschtermin" required options={["Mittwoch 19:00", "Sonntag 18:00"]} />
-            <Textarea label="Noch was?" rows={3} placeholder="Verletzungen, Fragen, Ansagen" />
+            <Input label="Name" name="name" required placeholder="Wie sollen wir dich rufen?" value={name} onChange={e => setName(e.target.value)} />
+            <Input label="E-Mail" name="mail" type="email" required placeholder="Wohin schicken wir die Bestätigung?" value={mail} onChange={e => setMail(e.target.value)} />
+            <Input label="Telefon (optional)" name="tel" placeholder="Nur falls kurzfristig etwas ausfällt" value={tel} onChange={e => setTel(e.target.value)} />
+            <Select label="Wunschtermin" required options={TERMIN_OPTIONS} value={termin} onChange={e => setTermin(e.target.value)} />
+            <Textarea label="Noch was?" rows={3} placeholder="Verletzungen, Fragen, Ansagen" value={message} onChange={e => setMessage(e.target.value)} />
             <p style={{ margin: 0, fontSize: "var(--text-xs)", color: "var(--ash-dim)" }}>Felder mit * brauchen wir wirklich. Der Rest ist deine Entscheidung.</p>
             <Checkbox required checked={consent} onChange={e => { setConsent(e.target.checked); setErr(false); }}>
               Ich bin damit einverstanden, dass JKDM meine Angaben zur Bearbeitung meiner Anfrage speichert und verwendet. Datenschutzerklärung gelesen.
@@ -87,8 +126,9 @@ export default function TrialContent({ content }) {
             <Checkbox checked={news} onChange={e => setNews(e.target.checked)}>
               Schick mir Termine, Seminare und Studio-News. Kein Spam, kein Newsletter-Getöse.
             </Checkbox>
-            {err && <p style={{ margin: 0, fontSize: "var(--text-xs)", color: "var(--red)" }}>Ohne dein Okay dürfen wir nicht.</p>}
-            <Button size="lg" fullWidth onClick={submit}>{c.submitButton}</Button>
+            {err && <p style={{ margin: 0, fontSize: "var(--text-xs)", color: "var(--red)" }}>Bitte Name, E-Mail und dein Okay nicht vergessen.</p>}
+            {submitError && <p style={{ margin: 0, fontSize: "var(--text-xs)", color: "var(--red)" }}>{submitError}</p>}
+            <Button size="lg" fullWidth onClick={submit} disabled={sending}>{sending ? "Wird gesendet..." : c.submitButton}</Button>
           </div>
         </div>
       </Section>
