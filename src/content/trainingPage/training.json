@@ -1,6 +1,16 @@
 {
-  "headline": "Training",
-  "subhead": "Vier Wege durch dasselbe Studio. Alle führen in dieselbe Linie — such dir deinen aus.",
+  "subhead": " Die Philosophie des Bruce Lee\n„Sei Wasser, mein Freund.“ („Be water, my friend.“)\n – Bruce LeeBedeutung: \nSei flexibel, passe dich jeder Situation an und lass dich nicht starr blockieren. \nWasser kann fließen oder schmettern.",
+  "ctaButton": "Termin sichern",
+  "videoHref": "https://www.tiktok.com/@sifudominik/video/7634437069032525088",
+  "section2Label": "So sieht das aus",
+  "locationLine": "Redlingerstr. 7, 81735 München · U5 Michaelibad. Vor Ort ist alles ausgeschildert — du findest uns.",
+  "section2Title": "Eine Technik. Hundert Wiederholungen. Dein Reflex.",
+  "videoCaption": "Die Hand, die abfängt — in Zeitlupe.",
+  "videoNote": "TikTok · @sifudominik",
+  "section2Body": "So sieht es aus, wenn ein Schüler eine Bewegung zum ersten Mal wirklich trifft. In Zeitlupe kannst du zusehen; auf der Matte hast du dafür einen Bruchteil einer Sekunde. Genau das studieren wir zusammen — Abend für Abend, bis es von allein passiert.",
+  "badgeText": "Preise Einzeltraining 35,- / MIN 60 ",
+  "headline": "Trainingsangebote in München ",
+  "videoLabel": "POV · Zeitlupe",
   "formats": [
     {
       "title": "Gruppentraining",
@@ -51,15 +61,5 @@
       ]
     }
   ],
-  "locationLine": "Redlingerstr. 7, 81735 München · U5 Michaelibad. Vor Ort ist alles ausgeschildert — du findest uns.",
-  "ctaButton": "Termin sichern",
-  "badgeText": "Preise Einzeltraining & Seminartermine folgen",
-  "videoLabel": "POV · Zeitlupe",
-  "videoCaption": "Die Hand, die abfängt — in Zeitlupe.",
-  "videoNote": "TikTok · @sifudominik",
-  "videoHref": "https://www.tiktok.com/@sifudominik/video/7634437069032525088",
-  "section2Label": "So sieht das aus",
-  "section2Title": "Eine Technik. Hundert Wiederholungen. Dein Reflex.",
-  "section2Body": "So sieht es aus, wenn ein Schüler eine Bewegung zum ersten Mal wirklich trifft. In Zeitlupe kannst du zusehen; auf der Matte hast du dafür einen Bruchteil einer Sekunde. Genau das studieren wir zusammen — Abend für Abend, bis es von allein passiert.",
   "section2Button": "Selbst ausprobieren — {{price}}"
 }
