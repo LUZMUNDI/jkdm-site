@@ -1,6 +1,6 @@
 {
-  "headline": "Ein Abend. {{price}}. Bist du dabei?",
-  "subhead": "Kein Vertrag, keine Verkaufsrunde. Du kommst Mittwoch 19:00 oder Sonntag 18:00, stehst mit uns in der Reihe und entscheidest danach selbst.",
+  "headline": "Check uns ab. {{price}}. Bist du dabei!",
+  "subhead": "Mittwoch 19:00 \nSonntag   18:00",
   "statPills": [
     {
       "value": "{{price}}",
@@ -27,9 +27,10 @@
     "Grundlagen aus einer anderen Kampfkunst.",
     "Solide Grundfitness, aber keine Technik.",
     "Ein paar Jahre Erfahrung, etwas eingerostet.",
-    "Ein konkretes Ziel, das ich mitbringe und erreichen will."
+    "Ein konkretes Ziel, das ich mitbringe und erreichen will.",
+    "Bring lockere Sportkleidung mit und etwas Wasser"
   ],
   "submitButton": "Ich komme vorbei",
-  "confirmHeadline": "Willkommen in der Reihe.",
+  "confirmHeadline": "Willkommen im Team SifuDominik.",
   "confirmBody": "Du bekommst innerhalb von 24 Stunden eine Bestätigung per Mail. Komm 10 Minuten früher, bring Sportzeug und Wasser mit. Vor Ort ist alles ausgeschildert — den Rest zeigen wir dir drinnen."
 }
