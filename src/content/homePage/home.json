@@ -13,18 +13,10 @@
     {
       "name": "Pencak Silat",
       "cjk": ""
-    },
-    {
-      "name": "Selbstverteidigung",
-      "cjk": "護身"
-    },
-    {
-      "name": "Chen Tai Chi",
-      "cjk": "太極"
     }
   ],
   "minuteTitle": "Kein Schnickschnack. Nur Wirkung.",
-  "whyLead": "Hier bist du nach zehn Minuten kein Gast mehr, sondern Teil der Reihe. Du studierst mit Leuten, die deinen Namen kennen, dich hochziehen — und merken, wenn du dich drückst.",
+  "whyLead": "Hier bist du nach zehn Minuten kein Gast mehr, sondern Teil der Reihe. Du studierst mit Leuten, die deinen Namen kennen, dich hochziehen.",
   "heroStats": [
     {
       "value": "1992",
@@ -39,7 +31,7 @@
       "label": "Pro Monat"
     }
   ],
-  "heroSubhead": "Fünf Stile, ein Studio in München: Jeet Kune Do, Wing Chun, Pencak Silat, Selbstverteidigung und Chen Tai Chi. Eine Linie, seit 1992 weitergegeben — ab Mittwoch auch an dich.",
+  "heroSubhead": "5 Stile, ein Studio in München: Jeet Kune Do Concept, Wing Chun, Pencak Silat, Dim Mak und Kuntao. Eine Linie, seit 1992 weitergegeben — ab Mittwoch auch an dich.",
   "whyReasons": [
     {
       "title": "Keine Warteschlange",
@@ -62,11 +54,11 @@
   ],
   "whyLabel": "Warum hier",
   "heroSecondaryButton": "Mittwoch 19:00 · Sonntag 18:00",
-  "heroHeadline": "Du kommst als Gast. Du gehst als Schüler.",
-  "heroEyebrow": "„Willkommen bei Jeet Kune Do München.“",
+  "heroHeadline": "Kein Schnickschnack. Nur Wirkung. Jeet Kune Do",
+  "heroEyebrow": "„Willkommen im Team von Sifu Dominik“",
   "whyTitle": "Kleine Gruppe. Grosse Linie. Dein Platz ist frei.",
   "disciplinesLabel": "Was du studierst",
-  "disciplinesTitle": "Fünf Stile. Eine Linie. Ein Studio.",
+  "disciplinesTitle": "Gleichgewicht. Koordination. Meditation. Kampfgeist. ",
   "minuteBody": "Wir studieren in kleinen Gruppen — nicht, weil wir exklusiv klingen wollen, sondern weil dich sonst niemand sieht. Wir hören zusammen Musik, wir lachen, wir gehen zusammen an die Grenze. Und wir lernen zusammen. Das ist das Wichtigste.",
   "heroPrimaryButton": "Probetraining sichern — {{price}}"
 }
