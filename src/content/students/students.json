@@ -139,7 +139,7 @@
       "isReal": true,
       "name": "Beast",
       "slug": "Beast",
-      "style": "Reflex",
+      "style": "Freies Training ",
       "disc": "Jeet Kune Do",
       "since": "seit 2019",
       "image": "/assets/uploads/final-boss.png",
@@ -160,11 +160,11 @@
       "isReal": false,
       "name": "Adam",
       "slug": "Adam",
-      "style": "Struktur",
-      "disc": "Wing Chun",
+      "style": "freies Training",
+      "disc": "Jeet Kune Do, Boxen",
       "since": "seit 2024",
       "image": "/assets/uploads/tekken-sam.png",
-      "quote": "Keine Show, keine Pokale an der Wand. Nur Technik, die funktioniert — und Leute, die wollen, dass du sie kannst.",
+      "quote": "Keine Show, keine Pokale an der Wand. \nNur Technik, die funktioniert — und Leute, die wollen, dass du sie kannst.",
       "stats": [
         {
           "value": "2024",
@@ -181,22 +181,22 @@
       "isReal": true,
       "name": "Curry",
       "slug": "Curry",
-      "style": "Struktur",
+      "style": "Freies Training ",
       "disc": "Selbsverteidigung",
       "since": "2020",
       "image": "/assets/uploads/tekken-olvide-su-nombre.png",
-      "quote": "I break bones"
+      "quote": "Ich freue mich auf ein abwechsungsreiches Training "
     },
     {
-      "initial": "P",
+      "initial": "S",
       "isReal": false,
-      "name": "Pantera",
-      "slug": "Test",
-      "style": "Attack!",
-      "disc": "Wild techniques",
-      "since": "Forever",
+      "name": "Sabine",
+      "slug": "Sabine",
+      "style": "Schärpe: Orange ",
+      "disc": "Frauen Selbstverteidigung ",
+      "since": "2023",
       "image": "/assets/uploads/pantera.png",
-      "quote": "Won't escape me"
+      "quote": "ich kratze und beiße in der Not "
     }
   ]
 }
