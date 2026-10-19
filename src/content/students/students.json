@@ -37,10 +37,6 @@
           "label": "Dabei seit"
         },
         {
-          "value": "Orange",
-          "label": "Gurt"
-        },
-        {
           "value": "截拳道",
           "label": "Jeet Kune Do"
         }
@@ -52,7 +48,7 @@
       "name": "Michael",
       "slug": "michael",
       "style": "Schärpe: Violett",
-      "disc": "Trainer · Bruce-Lee-Fan",
+      "disc": "Jeet Kune Do, Wing Chun, Silat, Fitness",
       "since": "10 Jahre Kampfkunst",
       "image": "/assets/uploads/tekken-michael.png",
       "quote": "Zehn Jahre Kampfkunst, und ich bin noch nicht fertig. Bei mir kannst du sicher sein: du bekommst eine gute Sparringssession. Ich helfe dir, deine Grenzen zu verschieben und besser zu werden.",
@@ -60,14 +56,6 @@
         {
           "value": "10",
           "label": "Jahre Kampfkunst"
-        },
-        {
-          "value": "Trainer",
-          "label": "Rolle"
-        },
-        {
-          "value": "Sparring",
-          "label": "Schwerpunkt"
         }
       ]
     },
@@ -76,8 +64,8 @@
       "isReal": false,
       "name": "Bianca",
       "slug": "Bianca",
-      "style": "Wurzel",
-      "disc": "Chen Tai Chi",
+      "style": "Freies Training",
+      "disc": "Wing Chun, Jeet Kune Do, Streetfight",
       "since": "seit 2017",
       "image": "/assets/uploads/tekken-bianca.png",
       "quote": "Tai Chi war der Teil, über den ich vorher gelacht habe. Jetzt ist es der Teil, den ich nicht ausfallen lassen will.",
@@ -95,13 +83,13 @@
     {
       "initial": "Jin",
       "isReal": false,
-      "name": "Evil Jin",
-      "slug": "Evil Jin",
-      "style": "Street fight",
-      "disc": "Fighting",
+      "name": "Thomas",
+      "slug": "Thomas",
+      "style": "Schärpe: grün",
+      "disc": "Jeet Kune Do, Taek won do",
       "since": "2000",
       "image": "/assets/uploads/tekken-otro.png",
-      "quote": "I WILL KILL YOU!",
+      "quote": "Ich liebe dieses Training und nutze es auch als Fitnesskonzept",
       "stats": []
     },
     {
