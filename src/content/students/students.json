@@ -97,11 +97,11 @@
       "isReal": false,
       "name": "Martin",
       "slug": "Martin",
-      "style": "Druck",
+      "style": "Schärpe: grün",
       "disc": "Pencak Silat",
       "since": "seit 2018",
       "image": "/assets/uploads/tekken-viejo.png",
-      "quote": "Ich komme aus dem Fitnessstudio. Hier bin ich nach 90 Minuten platt — und kann etwas, das ich vorher nicht konnte.",
+      "quote": "Ich mag Fitness und Team Training und fühle mich bei JKDM sehr aufgehoben",
       "stats": [
         {
           "value": "2018",
@@ -114,15 +114,15 @@
       ]
     },
     {
-      "initial": "C",
+      "initial": "K",
       "isReal": true,
-      "name": "Cali",
-      "slug": "Cali",
-      "style": "Ruhe",
-      "disc": "Kali Escrima",
+      "name": "Kali",
+      "slug": "Wau Wau",
+      "style": "freies cardio Training",
+      "disc": "train the Trainer",
       "since": "seit 2023",
       "image": "/assets/uploads/tekken-cali.png",
-      "quote": "Ich wollte eigentlich nur einmal reinschauen. Das war vor zwei Jahren — ich trainiere die Trainer in Cardio",
+      "quote": "Ich wollte eigentlich nur einmal reinschauen. \nDas war vor zwei Jahren — ich trainiere jetzt die Trainer in Cardio",
       "stats": [
         {
           "value": "2023",
