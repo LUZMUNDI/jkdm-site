@@ -1,6 +1,6 @@
 {
-  "minuteLabel": "Das Studio in einer Minute",
-  "minuteClosing": "Dann sehen wir uns im Studio.",
+  "minuteLabel": "Das Studio in einer Minute als Videoclip",
+  "minuteClosing": "Lerne das coolste Kellerstudio in München kennen ",
   "disciplines": [
     {
       "name": "Jeet Kune Do",
@@ -19,19 +19,19 @@
   "whyLead": "Wir sind eine Privatschule und trainieren in kleinen Gruppen, dadurch lernst du efekttiver ",
   "heroStats": [
     {
-      "value": "1992",
-      "label": "Auf der Matte"
+      "value": "seit 1992 im Training",
+      "label": "Wir trainieren für dein Leben gerne"
     },
     {
-      "value": "5",
-      "label": "Stile"
+      "value": "Ohne Vertragsbindung ? Ja gerne ",
+      "label": "Jetzt Probetraining ausmachen und starten "
     },
     {
       "value": "{{monthlyPrice}}",
       "label": "Pro Monat"
     }
   ],
-  "heroSubhead": "5 Stile, ein Studio in München: Jeet Kune Do Concept, Wing Chun, Pencak Silat, Dim Mak und Kuntao. Eine Linie, seit 1992 weitergegeben — ab Mittwoch auch an dich.",
+  "heroSubhead": "5 Stile, ein Studio in München: Jeet Kune Do Concept, Wing Chun, Pencak Silat, Dim Mak und Kuntao. \nEs gibt keine Wunder, nur Training. ",
   "whyReasons": [
     {
       "title": "Selbstverteidigung",
@@ -48,17 +48,17 @@
   ],
   "locationLine": "Redlingerstr. 7, 81735 München · U5 Michaelibad. Vor Ort ist alles ausgeschildert — du findest uns.",
   "minuteQuotes": [
-    "Hier wirst du gesehen. Korrigiert. Gefordert.",
-    "Das ist eine Gemeinschaft mit Menschen, die auf demselben Weg sind wie du.",
-    "Wenn du etwas Bequemes suchst, bist du hier falsch."
+    "Wir bilden aus!! Werde Kampfkunst Trainer/in ",
+    "Trainiere und lerne mit Menschen, die auf dem selben Weg sind wie du.",
+    "Wir freuen und Dich bald kennenzulernen. ab 10 bis 80 Jahren "
   ],
-  "whyLabel": "Warum hier trainieren ?",
+  "whyLabel": "Funktions-Trainingskleidung kann im Studio erworben werden",
   "heroSecondaryButton": "Mittwoch 19:00 · Sonntag 18:00",
   "heroHeadline": "Trainiere nicht einen Stil sondern deinen",
   "heroEyebrow": "„Willkommen im Team von Sifu Dominik“",
   "whyTitle": "Trainiere Jeet Kune Do als modernes Fitness Concept",
   "disciplinesLabel": "Was du studierst",
   "disciplinesTitle": "Gleichgewicht. Koordination. Meditation. Kampfgeist. ",
-  "minuteBody": "Wir studieren in kleinen Gruppen —  Das ist das Wichtigste.",
+  "minuteBody": "Wir studieren in kleinen Gruppen oder bieten Einzeltraining an ",
   "heroPrimaryButton": "Probetraining sichern — {{price}}"
 }
